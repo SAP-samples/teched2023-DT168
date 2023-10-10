@@ -1,14 +1,14 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-DT168)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-DT168)
 
-# Session ID - Session Title
+# DT168 - Using ABAP Cloud to Build Extensions for SAP S/4HANA Cloud, Private Edition
 
 ## Description
 
 This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
 
 ## Overview
+In this Hands On Workshop, we will earn how to apply Cloud API Enablement Guidelines for SAP S/4HANA Cloud, private edition and SAP S/4HANA (the on-premise version) to consume an un released SAP API by adapting 3 tier extensibility model.
 
-This session introduces attendees to...
 
 ## Requirements
 
