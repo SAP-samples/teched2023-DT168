@@ -1,26 +1,17 @@
-# Level 1 Heading
+# Understand the scenario
 
-In this exercise, you will...
+In this exercise,  you will develop a simple custom app (Online Shop) following ABAP Cloud development model. When the online shop entry is saved, a purchase requistion is created with the ordered item selected by the user. 
+Assuming there is no released API available for purchase requisition, we will create a wrapper in Tier 2 (API Enablement layer) and release it for consumption in cloud. The online shop shall use the wrapper created in Tier 2 to post the purchase requisition.
 
-## Level 2 Heading
+    ![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/ff23dc56-5c31-479e-8097-6cbbc11104e0)
 
-After completing these steps you will have....
 
-1.	Click here.
-<br>![](/exercises/ex0/images/00_00_0010.png)
+<b>Note</b>:
+The exercise follows the assumption that there is no suitable released API to create purchase requisitions, and we therefore need to find and wrap an unreleased API as a suitable alternative. Please be aware that we follow this assumption simply for illustrative purposes, as SAP does indeed provide a released API to create purchase requisitions (<a href="https://developers.sap.com/tutorials/abap-s4hanacloud-purchasereq-integrate-api.html">see Integrate released purchase requisition API into Online Shop Business Object</a>).                                                                        
+Please note that the scenario has been developed for training purposes only and might not reflect all the complexity of a real-world scenario. The focus in these hands-on sessions is purely on technical knowledge transfer and therefore optimizations from a business perspective are not part of the training and the scenario will not be further assessed. 
 
-2.	Insert this code.
-``` abap
- DATA(params) = request->get_form_fields(  ).
- READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
+## Result
+You will have created an online shop entry which will post a purchase requisition using the wrapper over the not released BAPI.
+<img width="935" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/3b42cc3f-1fd8-41d2-be83-e6682d17c295">
 
-## Summary
-
-Now that you have ... 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Continue to - [Exercise 1 - Implement wrapper for Purchase Requisition BAPI [BAPI_PR_CREATE](../ex1/README.md)
