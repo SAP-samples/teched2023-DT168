@@ -3,10 +3,10 @@ In this exercise, we will create an interface to implement the wrapper class, th
 
 ## Exercise 1.1 Create Package Z
 ## Exercise 1.2 Create interface ZIF_
-## Exercise 1.2 Create wrapper class ZCL_
-## Exercise 1.3 Create factor class ZCL_
-## Exercise 1.3 Release the Interface and Factory class
-## Exercise 1.4 Run ATC and Request Exemptions
+## Exercise 1.3 Create wrapper class ZCL_
+## Exercise 1.4 Create factor class ZCL_
+## Exercise 1.5 Release the Interface and Factory class
+## Exercise 1.6 Run ATC and Request Exemptions
 ## Summary
 You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.
 
