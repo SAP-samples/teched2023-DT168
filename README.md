@@ -9,6 +9,9 @@ This repository contains the material for the SAP TechEd 2022 session called Ses
 ## Overview
 In this Hands On Workshop, we will earn how to apply Cloud API Enablement Guidelines for SAP S/4HANA Cloud, private edition and SAP S/4HANA (the on-premise version) to consume an un released SAP API by adapting 3 tier extensibility model.
 
+![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/ed79c8cb-8cc0-486a-bb73-0920be190715)
+
+
 
 ## Requirements
 
