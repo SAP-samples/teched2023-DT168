@@ -7,10 +7,10 @@ Assuming there is no released API available for purchase requisition, we will cr
 
 
 
-<b>Note</b>:
+><b>Note</b>:
 The exercise follows the assumption that there is no suitable released API to create purchase requisitions, and we therefore need to find and wrap an unreleased API as a suitable alternative. Please be aware that we follow this assumption simply for illustrative purposes, as SAP does indeed provide a released API to create purchase requisitions (<a href="https://developers.sap.com/tutorials/abap-s4hanacloud-purchasereq-integrate-api.html">see Integrate released purchase requisition API into Online Shop Business Object</a>).                                                                        
 
-Please note that the scenario has been developed for training purposes only and might not reflect all the complexity of a real-world scenario. The focus in these hands-on session is purely on technical knowledge transfer and therefore optimizations from a business perspective are not part of the training and the scenario will not be further assessed. 
+>The scenario has been developed for training purposes only and might not reflect all the complexity of a real-world scenario. The focus in these hands-on session is purely on technical knowledge transfer and therefore optimizations from a business perspective are not part of the training and the scenario will not be further assessed. 
 
 ## Result
 You will have created an online shop entry which will post a purchase requisition using the wrapper over the not released BAPI.
