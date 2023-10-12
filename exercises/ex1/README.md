@@ -1,44 +1,14 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 1 - Implement wrapper for Purchase Requisition BAPI BAPI_PR_CREATE
+In this exercise, we will create an interface to implement the wrapper class, the wrapper class and a factory class to instantiate the wrapper class. We will then release the interface and the factory class for Use in Cloud.
 
-In this exercise, we will create...
-
-## Exercise 1.1 Sub Exercise 1 Description
-
-After completing these steps you will have created...
-
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
-
-
-
-## Exercise 1.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
-
-
+## Exercise 1.1 Create Package Z
+## Exercise 1.2 Create interface ZIF_
+## Exercise 1.2 Create wrapper class ZCL_
+## Exercise 1.3 Create factor class ZCL_
+## Exercise 1.3 Release the Interface and Factory class
+## Exercise 1.4 Run ATC and Request Exemptions
 ## Summary
+You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.
 
-You've now ...
-
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 
