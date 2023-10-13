@@ -31,9 +31,10 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 1.6 - Run ATC and Request Exemptions](exercises/ex1#exercise-12-run-atc-and-request-exemptions)
 - [Exercise 2 - Create Online Shop application](exercises/ex2/)
     - [Exercise 2.1 - Create Package Z_ONLINE_SHOP_XX](exercises/ex2#exercise-21-create-package-z_online_shop_xx)
-    - [Exercise 2.2 - Generate Transactional UI Service](exercises/ex2#exercise-22-generate-transactional-ui-service)
-    - [Exercise 2.3 - Enhance the BO to generate the Online Shop Order ID](exercises/ex2#exercise-23-enhance-the-bo-to-generate-the-online-shop-order-id)
-    - [Exercise 2.4 - Test the Online Shop application](exercises/ex2#exercise-23-test-the-online-shop-application)
+    - [Exercise 2.2 - Create database table ZAONLINESHOP_XX](exercises/ex2#exercise-22-create-database-table-zaonlineshop_xx)
+    - [Exercise 2.3 - Generate Transactional UI Service](exercises/ex2#exercise-23-generate-transactional-ui-service)
+    - [Exercise 2.4 - Enhance the BO to generate the Online Shop Order ID](exercises/ex2#exercise-24-enhance-the-bo-to-generate-the-online-shop-order-id)
+    - [Exercise 2.5 - Test the Online Shop application](exercises/ex2#exercise-25-test-the-online-shop-application)
 - [Exercise 3 - Second Exercise Description](exercises/ex3/)
   
 **OR** Link to the Tutorial Navigator for example...
