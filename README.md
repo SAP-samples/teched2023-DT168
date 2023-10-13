@@ -35,7 +35,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 2.3 - Generate Transactional UI Service](exercises/ex2#exercise-23-generate-transactional-ui-service)
     - [Exercise 2.4 - Enhance the BO to generate the Online Shop Order ID](exercises/ex2#exercise-24-enhance-the-bo-to-generate-the-online-shop-order-id)
     - [Exercise 2.5 - Test the Online Shop application](exercises/ex2#exercise-25-test-the-online-shop-application)
-- [Exercise 3 - Second Exercise Description](exercises/ex3/) 
+- [Exercise 3 - Second Exercise Description](exercises/ex3/)  
   
 **OR** Link to the Tutorial Navigator for example...
 
