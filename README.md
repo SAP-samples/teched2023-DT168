@@ -29,9 +29,11 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 1.4 - Create factor class ZCL_BAPI_WRAP_FACTORY_XX](exercises/ex1#exercise-12-create-factory-class-zcl_bapi_wrap_factory_xx)
     - [Exercise 1.5 - Release the Interface and Factory class](exercises/ex1#exercise-12-release-the-interface-and-factory-class)
     - [Exercise 1.6 - Run ATC and Request Exemptions](exercises/ex1#exercise-12-run-atc-and-request-exemptions)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 2 - Create Online Shop application](exercises/ex2/)
+    - [Exercise 2.1 - Create Package Z_ONLINE_SHOP_XX](exercises/ex2#exercise-21-create-package-z_online_shop_xx)
+    - [Exercise 2.2 - Generate Transactional UI Service](exercises/ex2#exercise-22-generate-transactional-ui-service)
+    - [Exercise 2.3 - Enhance the BO to generate the Online Shop Order ID](exercises/ex2#exercise-23-enhance-the-bo-to-generate-the-online-shop-order-id)
+    - [Exercise 2.4 - Test the Online Shop application](exercises/ex2#exercise-23-test-the-online-shop-application)
 - [Exercise 3 - Second Exercise Description](exercises/ex3/)
   
 **OR** Link to the Tutorial Navigator for example...
