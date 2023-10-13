@@ -38,8 +38,8 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Exercise 3 - Integrate Wrapper for BAPI_PR_CREATE into Online Shop application](exercises/ex3/)
     - [Exercise 3.1 - Implement unmanaged save](exercises/ex2#exercise-31-implement-unmanaged-save)
     - [Exercise 3.2 - Validate Purchase Requisition on Post](exercises/ex2#exercise-32-validate-purchase-requisition-on-post)
-    - [Exercise 3.3 - Generate Transactional UI Service](exercises/ex2#exercise-23-generate-transactional-ui-service)
-    - [Exercise 3.4 - Enhance the BO to generate the Online Shop Order ID](exercises/ex2#exercise-24-enhance-the-bo-to-generate-the-online-shop-order-id)  
+    - [Exercise 3.3 - Create Purchase Requisition on Post](exercises/ex2#exercise-33-create-purchase-requisition-on-post)
+    - [Exercise 3.4 - Test Online Shop with Purchase requistion creation](exercises/ex2#exercise-34-test-online-shop-with-purchase-requisition-creation)  
   
 **OR** Link to the Tutorial Navigator for example...
 
