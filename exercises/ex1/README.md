@@ -19,7 +19,7 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 <br>**Description:** ZAPI_ENABLEMENT
 <br>Select **Add to favorite package**
 <br>**Super Package**: Z_PURCHASE_REQ_TIER2_XXX  
-<br**Package Type**: Development
+<br>**Package Type**: Development
 
 <img width="376" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/c2910edc-df27-4b05-8238-7c856c6bb8ad">
 
