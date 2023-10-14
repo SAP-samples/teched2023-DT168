@@ -12,5 +12,5 @@ You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use i
 
 Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 
-## Exercise 1.1 Create Package Z_PURCHASE_REQ_TIER2_XX
+## Exercise 1.1 Create Package Z\_PURCHASE_REQ_TIER2_XX
 ## Exercise 1.2 Create interface ZIF_BAPI_PR_CREATE_XX
