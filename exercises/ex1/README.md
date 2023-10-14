@@ -13,19 +13,18 @@ You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use i
 Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 
 ## Exercise 1.1 Create Package
-1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
-**Give the below information:**  
-**Name:** $Z_PURCHASE_REQ_TIER2_XXX  
-**Description**: Tier 2 for Purchase Requisition Wrapper  
-Select **Add to favorite package**  
-**Super Package**: $ZAPI_ENABLEMENT   
-**Package Type**: Development
+1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.  
+   &emsp;**Give the below information:**  
+        &emsp;&emsp;**Name:** $Z_PURCHASE_REQ_TIER2_XXX  
+        &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper  
+        &emsp;&emsp;Select **Add to favorite package**  
+        &emsp;&emsp;**Super Package**: $ZAPI_ENABLEMENT   
+        &emsp;&emsp;**Package Type**: Development
 
-    <img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
+   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
 
 2. Press **Next** and verify the SWC is LOCAL
-3. Press **Next** and Finish
-
+3. Press **Next** and **Finish**
 
 ## Exercise 1.2 Create interface
 sdf
