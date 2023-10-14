@@ -28,11 +28,11 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 
 ## Exercise 1.2 Create interface  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Interface**.  
-&emsp;**Give the below information:**
-&emsp;&emsp;**Name**: ZIF_BAPI_PR_CREATE_XXX
-&emsp;&emsp;**Description**: Wrapper Interface for BAPI_PR_CREATE
+&emsp;**Give the below information:**  
+&emsp;&emsp;**Name**: ZIF_BAPI_PR_CREATE_XXX  
+&emsp;&emsp;**Description**: Wrapper Interface for BAPI_PR_CREATE  
 
-&emsp;<img width="347" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/8a2a9abf-c78c-422b-931c-c767263b8b44">
+&emsp;&emsp;<img width="347" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/8a2a9abf-c78c-422b-931c-c767263b8b44">
 3. 
 
 <br>dsfs
