@@ -33,5 +33,6 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 &emsp;&emsp;**Description**: Wrapper Interface for BAPI_PR_CREATE  
 
 &emsp;&emsp;<img width="347" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/8a2a9abf-c78c-422b-931c-c767263b8b44">
+  
 2. Choose **Next** and **Finish**  
 
