@@ -8,7 +8,7 @@ In this exercise, we will create a custom application called Online Shop using A
 
 ## Exercise 2.3 Generate Transactional UI Service
 
-## Exercise 2.4 Enhance the BO to generate the Online Shop Order ID
+## Exercise 2.4 Enhance the BO to generate Online Shop Order ID
 
 ## Exercise 2.5 Test the Online Shop application
 
