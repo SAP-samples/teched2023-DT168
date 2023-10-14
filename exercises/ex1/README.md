@@ -1,7 +1,7 @@
 # Exercise 1 - Implement wrapper for Purchase Requisition BAPI BAPI_PR_CREATE
 In this exercise, we will create an interface to implement the wrapper class, the wrapper class and a factory class to instantiate the wrapper class. We will then release the interface and the factory class for Use in Cloud.
 
-## [Exercise 1.1 Create Package Z_PURCHASE_REQ_TIER2_XXX](#exercise-11-create-package) 
+## [Exercise 1.1 Create Package $Z_PURCHASE_REQ_TIER2_XXX](#exercise-11-create-package) 
 ## [Exercise 1.2 Create interface ZIF_BAPI_PR_CREATE_XX](#exercise-12-create-interface)
 ## Exercise 1.3 Create wrapper class ZCL_BAPI_PR_WRAPPER_XX 
 ## Exercise 1.4 Create factor class ZCL_BAPI_WRAP_FACTORY_XX
@@ -14,17 +14,18 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 
 ## Exercise 1.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
-<br>**Give the below information:**
-<br>**Name:** Z_PURCHASE_REQ_TIER2_XXX
-<br>**Description:** ZAPI_ENABLEMENT
-<br>Select **Add to favorite package**
-<br>**Super Package**: Z_PURCHASE_REQ_TIER2_XXX  
-<br>**Package Type**: Development
+**Give the below information:**  
+**Name:** $Z_PURCHASE_REQ_TIER2_XXX  
+**Description**: Tier 2 for Purchase Requisition Wrapper  
+Select **Add to favorite package**  
+**Super Package**: $ZAPI_ENABLEMENT   
+**Package Type**: Development
 
-<img width="376" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/c2910edc-df27-4b05-8238-7c856c6bb8ad">
+    <img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
 
-2. Press Next and verify the SWC is HOME
-3. Press Next to Select Transport Request. Create a new request if you have none.
+2. Press **Next** and verify the SWC is LOCAL
+3. Press **Next** and Finish
+
 
 ## Exercise 1.2 Create interface
 sdf
