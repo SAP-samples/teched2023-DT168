@@ -13,7 +13,7 @@ The exercise follows the assumption that there is no suitable released API to cr
 >The scenario has been developed for training purposes only and might not reflect all the complexity of a real-world scenario. The focus in these hands-on session is purely on technical knowledge transfer and therefore optimizations from a business perspective are not part of the training and the scenario will not be further assessed. 
 
 ## Result
-You will have created an online shop entry which will post a purchase requisition using the wrapper over the not released BAPI.
+You will have created an online shop entry which will post a purchase requisition using the wrapper over the not released BAPI (BAPI_PR_CREATE).
 <img width="935" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/3b42cc3f-1fd8-41d2-be83-e6682d17c295">
 
 ### Next Step
