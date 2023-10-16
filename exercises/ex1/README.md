@@ -10,7 +10,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 ## [Summary](#summary)
 You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.  
 
-Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
+Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)  
 
 ## Exercise 1.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.    
