@@ -35,8 +35,14 @@ In this exercise, we will create a custom application called Online Shop using A
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next** and **Finish**
 
-## Exercise 2.2 Create database table ZAONLINESHOP_XXX  
+## Exercise 2.2 Create database table  
+1. From the context menu of the package **Z_ONLINESHOP_XXX**, choose **New** --> **Other Repository Object**, search for 'database table' and enter the following information:
+&emsp;&emsp;i. **Name**: zaonlineshop_xxx
+&emsp;&emsp;ii.**Description**: Online Shop data
+&emsp;&emsp;iii. Press **Next** and select the transport request and choose **Finish**  
+2. 
 ## Exercise 2.3 Generate Transactional UI Service  
+1. Select the table created **zaonlineshop_xxx** and 
 ## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
 ## Exercise 2.5 Test the Online Shop application  
 ## Summary
