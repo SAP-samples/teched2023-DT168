@@ -20,6 +20,7 @@ Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../
 
 ## Exercise 2.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
+   
    &emsp;**Give the below information:**  
    &emsp;&emsp;**Name:** $Z_ONLINESHOP_XXX  
    &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper  
