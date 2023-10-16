@@ -1,0 +1,111 @@
+"! <h1>Purchase Requisition BAPIs Wrapper</h1>
+"! <p>This class offers functionality to wrap Purchase Requisition related BAPI calls (e.g. BAPI_PR_CREATE).<br/>
+"! Instances of this class are created using factory class {@link zrap620_cl_bapi_wrap_factory}.<br/>
+"! For a description and usage of the available functionality,
+"! see the method documentation in interface {@link zif_wrap_bapi_pr_create_gop}.</p>
+CLASS zcl_wrap_bapi_pr_create_xxx DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES zif_wrap_bapi_pr_create_xx.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+
+    "! <p class="shorttext synchronized" lang="en">This method prepares headerx control structure</p>
+    "!
+    "! @parameter pr_header | Purchase Req. - Header
+    "! @parameter prheaderx | Purchase Requisition - Header
+    METHODS prepare_headerx IMPORTING pr_header        TYPE zif_wrap_bapi_pr_create_gop=>pr_header
+                            RETURNING VALUE(prheaderx) TYPE bapimereqheaderx.
+
+    "! <p class="shorttext synchronized" lang="en">This method prepares itemx control structure</p>
+    "!
+    "! @parameter pr_items | Purchase Req. - Item
+    "! @parameter pritemx | Purchase Requisition - Item Data
+    METHODS prepare_itemx IMPORTING pr_items       TYPE zif_wrap_bapi_pr_create_gop=>pr_items
+                          RETURNING VALUE(pritemx) TYPE ty_bapimereqitemx.
+
+ENDCLASS.
+
+
+
+CLASS zcl_wrap_bapi_pr_create_xxx IMPLEMENTATION.
+
+  METHOD prepare_headerx.
+    FIELD-SYMBOLS <fieldx> TYPE any.
+
+    DATA(pr_header_struct) = CAST cl_abap_structdescr( cl_abap_typedescr=>describe_by_data( pr_header ) ).
+
+    LOOP AT pr_header_struct->components INTO DATA(component).
+      ASSIGN COMPONENT component-name OF STRUCTURE prheaderx TO <fieldx>.
+      <fieldx> = abap_true.
+    ENDLOOP.
+  ENDMETHOD.
+
+
+  METHOD prepare_itemx.
+    FIELD-SYMBOLS <fieldx> TYPE any.
+    DATA(pr_item_struct) = CAST cl_abap_structdescr( cl_abap_typedescr=>describe_by_data( VALUE zif_wrap_bapi_pr_create_gop=>pr_item(  ) ) ).
+
+    LOOP AT pr_items INTO DATA(pr_item).
+      DATA(pritemx_line) = VALUE bapimereqitemx( preq_item = pr_item-preq_item ).
+
+      LOOP AT pr_item_struct->components INTO DATA(component).
+        ASSIGN COMPONENT component-name OF STRUCTURE pritemx_line TO <fieldx>.
+
+        CASE component-name.
+          WHEN 'PREQ_ITEM'.
+          WHEN OTHERS.
+            <fieldx> = abap_true.
+        ENDCASE.
+      ENDLOOP.
+
+      APPEND pritemx_line TO pritemx.
+    ENDLOOP.
+  ENDMETHOD.
+
+
+  METHOD zif_wrap_bapi_pr_create_xx~check.
+
+    DATA(prheader) = CORRESPONDING bapimereqheader( pr_header ).
+    DATA(pritem) = CORRESPONDING ty_bapimereqitemimp( pr_items ).
+    DATA(prheaderx) = me->prepare_headerx( pr_header ).
+    DATA(pritemx) = me->prepare_itemx( pr_items ).
+
+    CALL FUNCTION 'BAPI_PR_CREATE'
+      EXPORTING
+        prheader  = prheader
+        prheaderx = prheaderx
+        testrun   = abap_true
+      TABLES
+        return    = result
+        pritem    = pritem
+        pritemx   = pritemx.
+
+  ENDMETHOD.
+
+
+  METHOD zif_wrap_bapi_pr_create_xx~create.
+
+    DATA(prheader) = CORRESPONDING bapimereqheader( pr_header ).
+    DATA(pritem) = CORRESPONDING ty_bapimereqitemimp( pr_items ).
+    DATA(prheaderx) = me->prepare_headerx( pr_header ).
+    DATA(pritemx) = me->prepare_itemx( pr_items ).
+
+    CALL FUNCTION 'BAPI_PR_CREATE'
+      EXPORTING
+        prheader  = prheader
+        prheaderx = prheaderx
+        testrun   = abap_false
+      IMPORTING
+        number    = result
+      TABLES
+        return    = pr_returns
+        pritem    = pritem
+        pritemx   = pritemx.
+
+  ENDMETHOD.
+ENDCLASS.
