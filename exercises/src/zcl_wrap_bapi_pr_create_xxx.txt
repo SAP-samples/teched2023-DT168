@@ -10,7 +10,7 @@ CLASS zcl_wrap_bapi_pr_create_xxx DEFINITION
 
   PUBLIC SECTION.
 
-    INTERFACES zif_wrap_bapi_pr_create_xx.
+    INTERFACES zif_bapi_pr_wrapper_xxx.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
@@ -68,7 +68,7 @@ CLASS zcl_wrap_bapi_pr_create_xxx IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD zif_wrap_bapi_pr_create_xx~check.
+  METHOD zif_bapi_pr_wrapper_xxx~check.
 
     DATA(prheader) = CORRESPONDING bapimereqheader( pr_header ).
     DATA(pritem) = CORRESPONDING ty_bapimereqitemimp( pr_items ).
@@ -88,7 +88,7 @@ CLASS zcl_wrap_bapi_pr_create_xxx IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD zif_wrap_bapi_pr_create_xx~create.
+  METHOD zif_bapi_pr_wrapper_xxx~create.
 
     DATA(prheader) = CORRESPONDING bapimereqheader( pr_header ).
     DATA(pritem) = CORRESPONDING ty_bapimereqitemimp( pr_items ).
