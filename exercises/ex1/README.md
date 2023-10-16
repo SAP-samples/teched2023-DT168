@@ -48,10 +48,10 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 <br>
 <br>  
 &emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step
-<br>
-2. Choose **Next** and **Finish**
+<br>  
+2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)    
-## Exercise 1.4 Create factory Class  
-## Exercise 1.5 Release Interface and Wrapper Class   
-## Exercise 1.6 Run ATC and Request Exemptions    
-## Summary   
+## Exercise 1.4 Create factory Class   
+## Exercise 1.5 Release Interface and Wrapper Class     
+## Exercise 1.6 Run ATC and Request Exemptions      
+## Summary     
