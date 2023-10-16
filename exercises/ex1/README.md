@@ -58,7 +58,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 <br>
 <br> 
 &emsp;&emsp;<img width="328" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/85100e91-acf4-4026-8a54-0e48221d4487">
-<br>
+
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  
 ## Exercise 1.5 Release Interface and Wrapper Class       
