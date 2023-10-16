@@ -3,8 +3,8 @@ In this exercise, we will create an interface to implement the wrapper class, th
 
 ## [Exercise 1.1 Create Package $Z_PURCHASE_REQ_TIER2_XXX](#exercise-11-create-package) 
 ## [Exercise 1.2 Create wrapper Interface ZIF_BAPI_PR_WRAPPER_XXX](#exercise-12-create-wrapper-interface)
-## [Exercise 1.3 Create wrapper Class ZCL_BAPI_PR_WRAPPER_XX](#exercise-13-create-wrapper-class)  
-## [Exercise 1.4 Create factory Class ZCL_BAPI_WRAP_FACTORY_XX](#exercise-14-create-factory-class)  
+## [Exercise 1.3 Create wrapper Class ZCL_BAPI_PR_WRAPPER_XXX](#exercise-13-create-wrapper-class)  
+## [Exercise 1.4 Create factory Class ZCL_BAPI_WRAP_FACTORY_XXX](#exercise-14-create-factory-class)  
 ## [Exercise 1.5 Release Interface and Factory class](#exercise-15-release-interface-and-factory-class) 
 ## [Exercise 1.6 Run ATC and Request Exemptions](#exercise-16-run-atc-and-request-exemptions) 
 ## [Summary](#summary)
