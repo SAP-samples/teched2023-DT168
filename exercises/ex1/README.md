@@ -13,7 +13,7 @@ You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use i
 Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)  
 
 ## Exercise 1.1 Create Package
-1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.    
+1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
    &emsp;**Give the below information:**  
    &emsp;&emsp;**Name:** $Z_PURCHASE_REQ_TIER2_XXX  
    &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper  
