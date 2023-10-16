@@ -16,9 +16,7 @@ In this exercise, we will create a custom application called Online Shop using A
 
 ## [Summary](#summary)
 
-You've now ...
 
-Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../ex3/README.md)
 
 ## Exercise 2.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
@@ -42,3 +40,5 @@ Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../
 ## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
 ## Exercise 2.5 Test the Online Shop application  
 ## Summary
+You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
+Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../ex3/README.md)
