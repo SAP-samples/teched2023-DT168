@@ -2,11 +2,11 @@
 In this exercise, we will create an interface to implement the wrapper class, the wrapper class and a factory class to instantiate the wrapper class. We will then release the interface and the factory class for Use in Cloud.
 
 ## [Exercise 1.1 Create Package $Z_PURCHASE_REQ_TIER2_XXX](#exercise-11-create-package) 
-## [Exercise 1.2 Create interface ZIF_BAPI_PR_WRAPPER_XXX](#exercise-12-create-interface)
-## Exercise 1.3 Create wrapper class ZCL_BAPI_PR_WRAPPER_XX 
-## Exercise 1.4 Create factor class ZCL_BAPI_WRAP_FACTORY_XX
-## Exercise 1.5 Release the Interface and Factory class
-## Exercise 1.6 Run ATC and Request Exemptions
+## [Exercise 1.2 Create wrapper interface ZIF_BAPI_PR_WRAPPER_XXX](#exercise-12-create-wrapper-interface)
+## Exercise 1.3 Create wrapper class ZCL_BAPI_PR_WRAPPER_XX(#exercise-12-create-wrapper-class)  
+## Exercise 1.4 Create factor class ZCL_BAPI_WRAP_FACTORY_XX(#exercise-12-create-factory-class) 
+## Exercise 1.5 Release Interface and Factory class(#exercise-12-release-interface-and-factory-class) 
+## Exercise 1.6 Run ATC and Request Exemptions(#exercise-12-run-atc-and-request-exemptions) 
 ## Summary
 You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.
 
@@ -26,7 +26,7 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 2. Press **Next** and verify the SWC is LOCAL
 3. Press **Next** and **Finish**
 
-## Exercise 1.2 Create Interface  
+## Exercise 1.2 Create Wrapper Interface  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Interface**.  
 &emsp;**Give the below information:**  
 &emsp;&emsp;**Name**: ZIF_BAPI_PR_WRAPPER_XXX  
