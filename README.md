@@ -25,7 +25,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 - [Exercise 1 - Implement wrapper for Purchase Requisition BAPI BAPI_PR_CREATE](exercises/ex1/)
     - [Exercise 1.1 - Create Package Z_PURCHASE_REQ_TIER2_XXX](exercises/ex1#exercise-11-create-package)
     - [Exercise 1.2 - Create wrapper Interface ZIF_BAPI_PR_CREATE_XXX](exercises/ex1#exercise-12-create-interface-zif_bapi_pr_create_xx)
-    - [Exercise 1.3 - Create wrapper Class ZCL_BAPI_PR_WRAPPER_XXX](exercises/ex1#exercise-12-create-wrapper-class-zcl_bapi_pr_wrapper_xx1)
+    - [Exercise 1.3 Create wrapper Class ZCL_WRAP_BAPI_PR_CREATE_XXX](exercises/ex1#exercise-12-create-wrapper-class-zcl_bapi_pr_wrapper_xx1)
     - [Exercise 1.4 - Create factory Class ZCL_BAPI_WRAP_FACTORY_XXX](exercises/ex1#exercise-12-create-factory-class-zcl_bapi_wrap_factory_xx)
     - [Exercise 1.5 - Release the Interface and Factory class](exercises/ex1#exercise-12-release-the-interface-and-factory-class)
     - [Exercise 1.6 - Run ATC and Request Exemptions](exercises/ex1#exercise-12-run-atc-and-request-exemptions)
