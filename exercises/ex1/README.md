@@ -57,7 +57,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  and activate  
-## Exercise 1.5 Release Interface and Factory Class  
+## Exercise 1.5 Release Interface and Factory Class
 1. Goto **Properties** of Interface zif_bapi_pr_wrapper_xxx, select **API State** and add Contract C1
    
    <img width="626" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1f1b862e-77a3-4325-9748-38f1c4b94571">
