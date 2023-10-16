@@ -36,13 +36,56 @@ In this exercise, we will create a custom application called Online Shop using A
 2. Press **Next** and **Finish**
 
 ## Exercise 2.2 Create database table
-1. From the context menu of the package **Z_ONLINESHOP_XXX**, choose **New** --> **Other Repository Object**, search for 'database table' and enter the following information:
-&emsp;&emsp;i. **Name**: zaonlineshop_xxx
-&emsp;&emsp;ii.**Description**: Online Shop data
+1. From the context menu of the package **Z_ONLINESHOP_XXX**, choose **New** --> **Other Repository Object**, search for 'database table' and enter the following information:  
+&emsp;&emsp;i. **Name**: zaonlineshop_xxx  
+&emsp;&emsp;ii.**Description**: Online Shop data  
 &emsp;&emsp;iii. Press **Next** and select the transport request and choose **Finish**  
-2. 
+2. Enter the below code and activate
+   
+   ```
+   @EndUserText.label : 'Online Shop'
+   @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+   @AbapCatalog.tableCategory : #TRANSPARENT
+   @AbapCatalog.deliveryClass : #A
+   @AbapCatalog.dataMaintenance : #NOT_ALLOWED
+   define table zaonlineshop_xxx {
+     key client               : mandt not null;
+     key order_uuid           : sysuuid_x16 not null;
+     order_id                 : abap.char(10);
+     order_item_id            : abap.char(40);
+     @Semantics.amount.currencyCode : 'zaonlineshop_801.currency'
+     order_item_price         : abap.curr(11,2);
+     order_item_quantity      : abap.numc(4);
+     currency                 : abap.cuky;
+     overall_status_indicator : zos_status;
+     delivery_date            : abap.dats;
+     notes                    : abap.string(256);
+     purchase_requisition     : abap.char(20);
+     purch_rqn_creation_date  : abap.dats;
+     created_by               : abp_creation_user;
+     created_at               : abp_creation_tstmpl;
+     last_changed_by          : abp_lastchange_user;
+     last_changed_at          : abp_lastchange_tstmpl;
+     local_last_changed_at    : abp_locinst_lastchange_tstmpl;
+   }
+
 ## Exercise 2.3 Generate Transactional UI Service  
-1. Select the table created **zaonlineshop_xxx** and 
+1. Select the table created **zaonlineshop_xxx** and from context menu, choose **Generate ABAP Repository Objects**. Select **ABAP RESTful Application Programming Model: UI Service**
+
+   <img width="353" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/cb3b4526-a1eb-4b8f-858d-47c48e28ec69">  
+
+2. Give the below information in the wizard:
+     i. **Data Model**:  
+            **Data Definition Name**: ZR_ONLINESHOP_XXX  
+            **Alias Name**: OnlineShop  
+     ii. **Behavior**:
+            **Implementation Class**: ZBP_R_ONLINESHOP_XXX
+            **Draft Table Name**: ZDONLINESHOP_XXX
+     iii.**Service Projection**: ZC_ONLINESHOP_XXX
+     iv. **Business Service**:
+             **Service Definition**: ZUI_ONLINESHOP_XXX
+             **Service Binding**: ZUI_V4_ONLINESHOP_XXX
+         
 ## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
 ## Exercise 2.5 Test the Online Shop application  
 ## Summary
