@@ -34,3 +34,9 @@ Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../
    <br>
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next** and **Finish**
+
+## Exercise 2.2 Create database table ZAONLINESHOP_XXX  
+## Exercise 2.3 Generate Transactional UI Service  
+## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
+## Exercise 2.5 Test the Online Shop application  
+## Summary
