@@ -57,8 +57,12 @@ In this exercise, we will create an interface to implement the wrapper class, th
 
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  and activate  
-## Exercise 1.5 Release Interface and Wrapper Class  
-1. Set Release Contract C1 for the Interface zif_wrap_bapi_pr_create_xx
+## Exercise 1.5 Release Interface and Factory Class  
+1. Goto **Properties** of Interface zif_bapi_pr_wrapper_xxx, select **API State** and add Contract C1
+   
+   <img width="626" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1f1b862e-77a3-4325-9748-38f1c4b94571">
+
+3. Similarly, set Release Contract C1 for the Factory Class zcl_bapi_wrap_factory_xxx  
 ## Exercise 1.6 Run ATC and Request Exemptions        
 ## Summary       
 You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.  
