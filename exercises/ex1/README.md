@@ -45,6 +45,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 <br>
 <br> 
 &emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/241e1453-aee9-4608-bcc7-9b31ed6ab4de)
+  
 &emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step  
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)
