@@ -33,7 +33,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 &emsp;&emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/f7d54fd5-cf22-463b-95d7-186b7934c149">
 
 2. Choose **Next** and **Finish**  
-3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) 
+3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) and activate  
    
 ## Exercise 1.3 Create Wrapper Class   
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Class**.  
@@ -45,7 +45,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 
 &emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step  
 3. Choose **Next** and **Finish**  
-4. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)  
+4. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)  and activate  
     
 ## Exercise 1.4 Create factory Class  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Class**.  
@@ -56,8 +56,9 @@ In this exercise, we will create an interface to implement the wrapper class, th
 <img width="328" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/85100e91-acf4-4026-8a54-0e48221d4487">
 
 2. Choose **Next** and **Finish**  
-3. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  
-## Exercise 1.5 Release Interface and Wrapper Class       
+3. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  and activate  
+## Exercise 1.5 Release Interface and Wrapper Class  
+1. Set Release Contract C1 for the Interface zif_wrap_bapi_pr_create_xx
 ## Exercise 1.6 Run ATC and Request Exemptions        
 ## Summary       
 You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.  
