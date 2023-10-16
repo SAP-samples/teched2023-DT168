@@ -21,7 +21,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
    <br>
    <br>  
    &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
-   <br>
+   
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next** and **Finish**
 
@@ -33,7 +33,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 <br>
 <br>  
 &emsp;&emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/f7d54fd5-cf22-463b-95d7-186b7934c149">
-<br>  
+
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) 
    
