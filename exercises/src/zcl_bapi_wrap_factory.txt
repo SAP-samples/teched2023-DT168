@@ -20,7 +20,7 @@ ENDCLASS.
 CLASS zcl_bapi_wrap_factory_xxx IMPLEMENTATION.
 
   METHOD create_instance.
-    result = NEW zcl_bapi_pr_wrapper_xxx(  ).
+    result = NEW zcl_wrap_bapi_pr_create_xxx(  ).
   ENDMETHOD.
 
   METHOD constructor.
