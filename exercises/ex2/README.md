@@ -22,7 +22,7 @@ Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.    
    &emsp;**Give the below information:**  
    &emsp;&emsp;**Name:** $Z_ONLINESHOP_XXX  
-   &emsp;&emsp;**Description**: Creation of Online Shop application using RAP generator
+   &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper
    &emsp;&emsp;Select **Add to favorite package**  
    &emsp;&emsp;**Super Package**: $ZLOCAL   
    &emsp;&emsp;**Package Type**: Development
