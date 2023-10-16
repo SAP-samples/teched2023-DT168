@@ -1,4 +1,4 @@
-<img width="669" alt="Screenshot 2023-10-16 at 1 24 23 PM" src="https://github.com/SAP-samples/teched2023-DT168/assets/106324991/db1cc80a-b9db-41a7-b473-58c37eec04a2"># Exercise 2 - Create Online Shop application
+# Exercise 2 - Create Online Shop application
 
 In this exercise, we will create a custom application called Online Shop using ABAP Cloud Development model. The application creates an Online shop entry with the Ordered Item.
 
@@ -28,7 +28,7 @@ Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../
    &emsp;&emsp;**Package Type**: Development
    <br>
    <br>  
-   &emsp;<img width="335" alt="image" src=" ">
+   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/106324991/c3e941da-b70c-4c33-b5fe-410c33d3d411">
    <br>
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next** and **Finish**
