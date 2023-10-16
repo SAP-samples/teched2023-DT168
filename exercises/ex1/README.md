@@ -41,4 +41,4 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 ## Exercise 1.4 Create factory Class
 ## Exercise 1.5 Release Interface and Wrapper Class 
 ## Exercise 1.6 Run ATC and Request Exemptions  
-## Summary  
+## Summary   
