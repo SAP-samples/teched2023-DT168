@@ -48,7 +48,8 @@ In this exercise, we will create an interface to implement the wrapper class, th
 <br>
 &emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step  
 2. Choose **Next** and **Finish**  
-3. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)    
+3. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)
+    
 ## Exercise 1.4 Create factory Class  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Class**.  
 &emsp;**Give the below information:**  
