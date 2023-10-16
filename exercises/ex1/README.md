@@ -36,8 +36,8 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
  
  
 2. Choose **Next** and **Finish**  
-3. Insert the below code
-4. 
+3. Insert the code from
+
    
 ## Exercise 1.3 Create Class  
 
