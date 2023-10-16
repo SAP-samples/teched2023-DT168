@@ -11,7 +11,7 @@ CLASS zcl_bapi_wrap_factory_xxx DEFINITION
     "! <p>This method creates an instance of the Purchase Requisition BAPI wrapper implementation.</p>
     "! @parameter result | Wrapper implementation instance
     CLASS-METHODS create_instance
-      RETURNING VALUE(result) TYPE REF TO zif_wrap_bapi_pr_create_xxx.
+      RETURNING VALUE(result) TYPE REF TO zif_bapi_pr_wrapper_xxx.
   PROTECTED SECTION.
   PRIVATE SECTION.
     METHODS constructor.
