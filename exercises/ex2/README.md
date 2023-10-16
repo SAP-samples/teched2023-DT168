@@ -2,9 +2,9 @@
 
 In this exercise, we will create a custom application called Online Shop using ABAP Cloud Development model. The application creates an Online shop entry with the Ordered Item.
 
-## Exercise 2.1 Create Package Z_ONLINE_SHOP_XXx
+## [Exercise 2.1 Create Package Z_ONLINE_SHOP_XXX](#exercise-21-create-package) 
 
-## Exercise 2.2 Create database table ZAONLINESHOP_XXx
+## Exercise 2.2 Create database table ZAONLINESHOP_XXX
 
 ## Exercise 2.3 Generate Transactional UI Service
 
@@ -17,3 +17,5 @@ In this exercise, we will create a custom application called Online Shop using A
 You've now ...
 
 Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../ex3/README.md)
+
+## Exercise 2.1 Create Package
