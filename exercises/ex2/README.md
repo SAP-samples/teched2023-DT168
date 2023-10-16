@@ -30,7 +30,7 @@ Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../
    &emsp;&emsp;**Package Type**: Development
    <br>
    <br>    
-   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/106324991/c3e941da-b70c-4c33-b5fe-410c33d3d411">
+   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/106324991/c38329c4-2f7a-4d02-96a1-1bf5f13754ba">
    <br>
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next** and **Finish**
