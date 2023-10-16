@@ -17,8 +17,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
    &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper  
    &emsp;&emsp;Select **Add to favorite package**  
    &emsp;&emsp;**Super Package**: $ZAPI_ENABLEMENT   
-   &emsp;&emsp;**Package Type**: Development
-   <br>
+   &emsp;&emsp;**Package Type**: Development   
    <br>  
    &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
    
@@ -30,7 +29,6 @@ In this exercise, we will create an interface to implement the wrapper class, th
 &emsp;**Give the below information:**  
 &emsp;&emsp;**Name**: ZIF_BAPI_PR_WRAPPER_XXX  
 &emsp;&emsp;**Description**: Wrapper Interface for BAPI_PR_CREATE  
-<br>
 <br>  
 &emsp;&emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/f7d54fd5-cf22-463b-95d7-186b7934c149">
 
@@ -42,7 +40,6 @@ In this exercise, we will create an interface to implement the wrapper class, th
 &emsp;**Give the below information:**  
 &emsp;&emsp;**Name**: ZCL_WRAP_BAPI_PR_CREATE_XXX  
 &emsp;&emsp;**Description**: Wrapper Class for BAPI_PR_CREATE
-<br>
 <br> 
 &emsp;&emsp;<img width="335" alt="image" src=https://github.com/SAP-samples/teched2023-DT168/assets/102820487/241e1453-aee9-4608-bcc7-9b31ed6ab4de)>
 
@@ -55,7 +52,6 @@ In this exercise, we will create an interface to implement the wrapper class, th
 &emsp;**Give the below information:**  
 &emsp;&emsp;**Name**: ZCL_WRAP_BAPI_PR_CREATE_XXX  
 &emsp;&emsp;**Description**: Wrapper Class for BAPI_PR_CREATE  
-<br>
 <br> 
 <img width="328" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/85100e91-acf4-4026-8a54-0e48221d4487">
 
