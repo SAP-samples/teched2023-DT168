@@ -20,20 +20,22 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
    &emsp;&emsp;Select **Add to favorite package**  
    &emsp;&emsp;**Super Package**: $ZAPI_ENABLEMENT   
    &emsp;&emsp;**Package Type**: Development
-
+   <br>
+   <br>  
    &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
-
-2. Press **Next** and verify the SWC is LOCAL
-3. Press **Next** and **Finish**
+   <br>
+1. Press **Next** and verify the SWC is LOCAL
+2. Press **Next** and **Finish**
 
 ## Exercise 1.2 Create wrapper Interface  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Interface**.  
 &emsp;**Give the below information:**  
 &emsp;&emsp;**Name**: ZIF_BAPI_PR_WRAPPER_XXX  
 &emsp;&emsp;**Description**: Wrapper Interface for BAPI_PR_CREATE  
-
+<br>
+<br>  
 &emsp;&emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/f7d54fd5-cf22-463b-95d7-186b7934c149">
-  
+<br>  
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) 
    
@@ -43,9 +45,10 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 &emsp;&emsp;**Name**: ZCL_WRAP_BAPI_PR_CREATE_XXX  
 &emsp;&emsp;**Description**: Wrapper Class for BAPI_PR_CREATE    
 &emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/241e1453-aee9-4608-bcc7-9b31ed6ab4de)
-  
+<br>
+<br>  
 &emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step
-
+<br>
 2. Choose **Next** and **Finish**
 3. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)  
 ## Exercise 1.4 Create factory Class
