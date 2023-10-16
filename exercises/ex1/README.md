@@ -38,6 +38,16 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) 
    
 ## Exercise 1.3 Create Wrapper Class   
+1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Class**.  
+&emsp;**Give the below information:**  
+&emsp;&emsp;**Name**: ZCL_WRAP_BAPI_PR_CREATE_XXX  
+&emsp;&emsp;**Description**: Wrapper Class for BAPI_PR_CREATE    
+&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/241e1453-aee9-4608-bcc7-9b31ed6ab4de)
+
+&emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step
+
+2. Choose **Next** and **Finish**
+3. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)  
 ## Exercise 1.4 Create factory Class
 ## Exercise 1.5 Release Interface and Wrapper Class 
 ## Exercise 1.6 Run ATC and Request Exemptions  
