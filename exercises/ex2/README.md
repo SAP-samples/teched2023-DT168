@@ -23,14 +23,14 @@ Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../
 
    &emsp;**Give the below information:**
    
-   &emsp;&emsp;**Name:** $Z_ONLINESHOP_XXX  
+   &emsp;&emsp;**Name:** Z_ONLINESHOP_XXX  
    &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper  
    &emsp;&emsp;Select **Add to favorite package**  
    &emsp;&emsp;**Super Package**: $ZLOCAL   
    &emsp;&emsp;**Package Type**: Development
    <br>
    <br>    
-   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/106324991/c38329c4-2f7a-4d02-96a1-1bf5f13754ba">
+   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/106324991/da9e7a02-769d-4e16-bd5e-6a49fc99af59">
    <br>
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next** and **Finish**
