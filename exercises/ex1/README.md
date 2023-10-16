@@ -36,7 +36,7 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
  
  
 2. Choose **Next** and **Finish**  
-3. Insert the code from
+3. Insert the code from [here](teched2023-DT168/exercises/src/zif_bapi_pr_wrapper_xxx.txt)
 
    
 ## Exercise 1.3 Create Class  
