@@ -3,14 +3,12 @@ In this exercise, we will create an interface to implement the wrapper class, th
   
 ## [Exercise 1.1 Create Package $Z_PURCHASE_REQ_TIER2_XXX](#exercise-11-create-package) 
 ## [Exercise 1.2 Create wrapper Interface ZIF_BAPI_PR_WRAPPER_XXX](#exercise-12-create-wrapper-interface)
-## [Exercise 1.3 Create wrapper Class ZCL_BAPI_PR_WRAPPER_XXX](#exercise-13-create-wrapper-class)  
+## [Exercise 1.3 Create wrapper Class ZCL_WRAP_BAPI_PR_CREATE_XXX](#exercise-13-create-wrapper-class)  
 ## [Exercise 1.4 Create factory Class ZCL_BAPI_WRAP_FACTORY_XXX](#exercise-14-create-factory-class)  
 ## [Exercise 1.5 Release Interface and Factory class](#exercise-15-release-interface-and-factory-class) 
 ## [Exercise 1.6 Run ATC and Request Exemptions](#exercise-16-run-atc-and-request-exemptions) 
 ## [Summary](#summary)
-You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.  
 
-Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)  
 
 ## Exercise 1.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
@@ -51,7 +49,13 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)    
-## Exercise 1.4 Create factory Class   
+## Exercise 1.4 Create factory Class  
+1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Class**.  
+&emsp;**Give the below information:**  
+&emsp;&emsp;**Name**: ZCL_WRAP_BAPI_PR_CREATE_XXX  
+&emsp;&emsp;**Description**: Wrapper Class for BAPI_PR_CREATE  
 ## Exercise 1.5 Release Interface and Wrapper Class     
 ## Exercise 1.6 Run ATC and Request Exemptions      
 ## Summary     
+You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.  
+Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)  
