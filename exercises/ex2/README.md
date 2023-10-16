@@ -19,3 +19,16 @@ You've now ...
 Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../ex3/README.md)
 
 ## Exercise 2.1 Create Package
+1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.    
+   &emsp;**Give the below information:**  
+   &emsp;&emsp;**Name:** $Z_ONLINESHOP_XXX  
+   &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper  
+   &emsp;&emsp;Select **Add to favorite package**  
+   &emsp;&emsp;**Super Package**: $ZLOCAL   
+   &emsp;&emsp;**Package Type**: Development
+   <br>
+   <br>  
+   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
+   <br>
+1. Press **Next** and verify the SWC is LOCAL
+2. Press **Next** and **Finish**
