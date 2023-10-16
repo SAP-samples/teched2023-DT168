@@ -76,15 +76,15 @@ In this exercise, we will create a custom application called Online Shop using A
 
 2. Give the below information in the wizard:
      i. **Data Model**:  
-            **Data Definition Name**: ZR_ONLINESHOP_XXX  
-            **Alias Name**: OnlineShop  
+     &emsp;&emsp;**Data Definition Name**: ZR_ONLINESHOP_XXX  
+     &emsp;&emsp;**Alias Name**: OnlineShop  
      ii. **Behavior**:  
-            **Implementation Class**: ZBP_R_ONLINESHOP_XXX  
-            **Draft Table Name**: ZDONLINESHOP_XXX  
+     &emsp;&emsp;**Implementation Class**: ZBP_R_ONLINESHOP_XXX  
+     &emsp;&emsp;**Draft Table Name**: ZDONLINESHOP_XXX  
      iii.**Service Projection**: ZC_ONLINESHOP_XXX  
      iv. **Business Service**:  
-             **Service Definition**: ZUI_ONLINESHOP_XXX  
-             **Service Binding**: ZUI_V4_ONLINESHOP_XXX  
+     &emsp;&emsp;**Service Definition**: ZUI_ONLINESHOP_XXX  
+     &emsp;&emsp;**Service Binding**: ZUI_V4_ONLINESHOP_XXX  
          
 ## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
 ## Exercise 2.5 Test the Online Shop application  
