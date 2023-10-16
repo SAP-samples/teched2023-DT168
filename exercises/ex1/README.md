@@ -43,7 +43,7 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 &emsp;&emsp;**Name**: ZCL_WRAP_BAPI_PR_CREATE_XXX  
 &emsp;&emsp;**Description**: Wrapper Class for BAPI_PR_CREATE    
 &emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/241e1453-aee9-4608-bcc7-9b31ed6ab4de)
-
+  
 &emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step
 
 2. Choose **Next** and **Finish**
