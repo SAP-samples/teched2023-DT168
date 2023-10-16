@@ -37,7 +37,7 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) 
    
-## Exercise 1.3 Create Wrapper Class  
+## Exercise 1.3 Create Wrapper Class    
 ## Exercise 1.3 Release Interface and Wrapper Class 
 ## Exercise 1.6 Run ATC and Request Exemptions  
 ## Summary  
