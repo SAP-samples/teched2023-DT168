@@ -2,7 +2,7 @@
 In this exercise, we will create an interface to implement the wrapper class, the wrapper class and a factory class to instantiate the wrapper class. We will then release the interface and the factory class for Use in Cloud.
 
 ## [Exercise 1.1 Create Package $Z_PURCHASE_REQ_TIER2_XXX](#exercise-11-create-package) 
-## [Exercise 1.2 Create interface ZIF_BAPI_PR_CREATE_XX](#exercise-12-create-interface)
+## [Exercise 1.2 Create interface ZIF_BAPI_PR_WRAPPER_XXX](#exercise-12-create-interface)
 ## Exercise 1.3 Create wrapper class ZCL_BAPI_PR_WRAPPER_XX 
 ## Exercise 1.4 Create factor class ZCL_BAPI_WRAP_FACTORY_XX
 ## Exercise 1.5 Release the Interface and Factory class
@@ -26,13 +26,18 @@ Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)
 2. Press **Next** and verify the SWC is LOCAL
 3. Press **Next** and **Finish**
 
-## Exercise 1.2 Create interface  
+## Exercise 1.2 Create Interface  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Interface**.  
 &emsp;**Give the below information:**  
-&emsp;&emsp;**Name**: ZIF_BAPI_PR_CREATE_XXX  
+&emsp;&emsp;**Name**: ZIF_BAPI_PR_WRAPPER_XXX  
 &emsp;&emsp;**Description**: Wrapper Interface for BAPI_PR_CREATE  
 
-&emsp;&emsp;<img width="347" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/8a2a9abf-c78c-422b-931c-c767263b8b44">
-  
+&emsp;&emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/f7d54fd5-cf22-463b-95d7-186b7934c149">
+ 
+ 
 2. Choose **Next** and **Finish**  
+3. Insert the below code
+4. 
+   
+## Exercise 1.3 Create Class  
 
