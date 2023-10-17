@@ -1,0 +1,164 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+
+  headerInfo: {  
+    typeName: 'OnlineShop',
+    typeNamePlural: 'OnlineShops',
+    title: {
+      type: #STANDARD,
+      label: 'OnlineShop',
+      value: 'OrderID'
+    }
+  },
+  presentationVariant: [ {
+    sortOrder: [ {
+      by: 'OrderID',
+      direction: #DESC
+    } ],
+    visualizations: [ {
+      type: #AS_LINEITEM
+    } ]
+  } ]
+}
+annotate view ZC_ONLINESHOP_XXX with
+{
+@UI.facet: [ {
+    id: 'idIdentification',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'OnlineShop',
+    position: 10
+  } ]    
+  @UI.hidden: true
+  OrderUUID;
+
+  @UI.lineItem: [ {
+    position: 20 ,
+    importance: #HIGH,
+    label: 'OrderID'
+  } ]
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'OrderID'
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  OrderID;
+
+  @UI.lineItem: [ {
+    position: 30 ,
+    importance: #HIGH,
+    label: 'OrderItemID'
+  } ]
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'OrderItemID'
+  } ]
+  
+    @Consumption.valueHelpDefinition: [{
+        entity: { name: 'Z_VH_OS_ITEM_ID', element: 'Material' },
+       label: 'Material'
+                                    }]
+  OrderItemID;
+
+  @UI.lineItem: [ {
+    position: 40 ,
+    importance: #HIGH,
+    label: 'OrderItemPrice'
+  } ]
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'OrderItemPrice'
+  } ]
+  OrderItemPrice;
+
+  @UI.lineItem: [ {
+    position: 50 ,
+    importance: #HIGH,
+    label: 'OrderItemQuantity'
+  } ]
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'OrderItemQuantity'
+  } ]
+  OrderItemQuantity;
+
+  @UI.selectionField: [ {
+    position: 70
+  } ]
+  Currency;
+
+  @UI.lineItem: [ {
+    position: 90 ,
+    importance: #HIGH,
+    label: 'OverallStatusIndicator'
+  } ]
+  @UI.identification: [ {
+    position: 90 ,
+    label: 'OverallStatusIndicator'
+  } ]
+  @Consumption.valueHelpDefinition: [{
+        entity: { name: 'Z_VH_OS_STATUS', element: 'Status' },
+       label: 'Online Shop Status'
+                                    }]
+  OverallStatusIndicator;
+
+  @UI.lineItem: [ {
+    position: 100 ,
+    importance: #HIGH,
+    label: 'DeliveryDate'
+  } ]
+  @UI.identification: [ {
+    position: 100 ,
+    label: 'DeliveryDate'
+  } ]
+  DeliveryDate;
+
+  @UI.lineItem: [ {
+    position: 110 ,
+    importance: #HIGH,
+    label: 'Notes'
+  } ]
+  @UI.identification: [ {
+    position: 110 ,
+    label: 'Notes'
+  } ]
+  Notes;
+
+  @UI.lineItem: [ {
+    position: 120 ,
+    importance: #HIGH,
+    label: 'PurchaseRequisition'
+  } ]
+  @UI.identification: [ {
+    position: 120 ,
+    label: 'PurchaseRequisition'
+  } ]
+  PurchaseRequisition;
+
+  @UI.lineItem: [ {
+    position: 130 ,
+    importance: #HIGH,
+    label: 'PurchRqnCreationDate'
+  } ]
+  @UI.identification: [ {
+    position: 130 ,
+    label: 'PurchRqnCreationDate'
+  } ]
+  PurchRqnCreationDate;
+
+  @UI.hidden: true
+  CreatedBy;
+
+  @UI.hidden: true
+  CreatedAt;
+
+  @UI.hidden: true
+  LastChangedBy;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}
