@@ -69,7 +69,7 @@ In this exercise, we will create a custom application called Online Shop using A
      local_last_changed_at    : abp_locinst_lastchange_tstmpl;
    }
 
-## Exercise 2.3 Generate Transactional UI Service  
+## Exercise 2.3 Generate Transactional UI Service
 1. Select the table created **zaonlineshop_xxx** and from context menu, choose **Generate ABAP Repository Objects**. Select **ABAP RESTful Application Programming Model: UI Service**
 
    <img width="353" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/cb3b4526-a1eb-4b8f-858d-47c48e28ec69">  
@@ -92,7 +92,7 @@ In this exercise, we will create a custom application called Online Shop using A
 
    Choose the transport request and press **Finish**  
 4. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX  
-## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
+## Exercise 2.4 Enhance the BO to generate Online Shop Order ID
 > Skip to Step 3 if Online Shop is generated for you
 1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
 
@@ -185,7 +185,7 @@ In this exercise, we will create a custom application called Online Shop using A
                         ) ).
      ENDMETHOD.
 
-## Exercise 2.5 Test the Online Shop application  
+## Exercise 2.5 Test the Online Shop application
 1. Go to the Service binding ZUI_V4_ONLINESHOP_XXX, select the entity **OnlineShop** and **Preview**  
 2. Test the application
 ## Summary
