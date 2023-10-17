@@ -16,9 +16,13 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   with draft;
 
 
+
+
+
 2. Change the implementation to "Unmanaged Save" 
 
   ```
+
   define behavior for ZR_ONLINESHOP_XXX alias OnlineShop
   //persistent table zaonlineshop_801
   draft table zdonlineshop_xxx
