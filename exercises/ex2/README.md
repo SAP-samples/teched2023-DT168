@@ -88,11 +88,11 @@ In this exercise, we will create a custom application called Online Shop using A
    Press **Next**  
 3. Review the names of the repository objects that are going to be generated and Press **Next**
 
-   ![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1ecb4da4-57bf-43b9-842e-4a6d66731589)
+   &emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1ecb4da4-57bf-43b9-842e-4a6d66731589)
 
    Choose the transport request and press **Finish**  
 4. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX  
-## Exercise 2.4 Enhance the Behavior Definition to generate Online Shop Order ID  
+## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
 1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
 
    ```
@@ -153,6 +153,38 @@ In this exercise, we will create a custom application called Online Shop using A
        LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
      }
    }
+2. Press **Ctrl+1** on the added determination CalculateOrderID to load the quickassist. Select the promt to add corresponding method to the behavior implementation.
+
+&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
+
+3. Add the below code to calculateOrderID method of class ZBP_R_ONLINESHOP_XXX
+
+   ```
+   METHOD CalculateOrderID.
+
+    READ ENTITIES OF zr_onlineshop_801 IN LOCAL MODE
+      ENTITY OnlineShop
+        FIELDS ( OrderID )
+        WITH CORRESPONDING #( keys )
+      RESULT DATA(OnlineOrders).
+
+    SELECT MAX( order_id ) FROM zaonlineshop_801 INTO @DATA(max_order_id). "active table
+    SELECT SINGLE FROM zdonlineshop_801 FIELDS MAX( orderid ) INTO @DATA(max_orderid_draft). "draft table
+    IF max_orderid_draft > max_order_id.
+      max_order_id = max_orderid_draft.
+    ENDIF.
+
+    "set initial values of new instances
+    MODIFY ENTITIES OF zr_onlineshop_801 IN LOCAL MODE
+      ENTITY OnlineShop
+        UPDATE FIELDS ( OrderID )
+        WITH VALUE #( FOR order IN OnlineOrders INDEX INTO i (
+                          %tky          = order-%tky
+                          OrderID       = max_order_id + i
+                        ) ).
+
+  ENDMETHOD.
+4. 
 ## Exercise 2.5 Test the Online Shop application  
 ## Summary
 You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
