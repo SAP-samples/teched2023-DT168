@@ -230,7 +230,8 @@ ii. Press **Ctrl+1** on behavior definition ZR_ONLINESHOP_XX to load quick assis
   ENDMETHOD.
 
 ```
-
+7. Find the final behavior definition code [here](../src/zr_onlineshop_xxx_bd.txt)
+8. Find the final behavior implementation code [here](../src/zbp_r_onlineshop_xxx.txt)
 ## Exercise 3.2 Enhance the Metadata extension view
 
 1. Replace the code from ZC_ONLINESHOP_XXX with [this](../src/zc_onlineshop_xxx_mde.txt) code.
