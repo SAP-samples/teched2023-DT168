@@ -87,6 +87,7 @@ In this exercise, we will create a custom application called Online Shop using A
      &emsp;&emsp;**Service Binding**: ZUI_V4_ONLINESHOP_XXX  
          
 ## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
+1. Add 
 ## Exercise 2.5 Test the Online Shop application  
 ## Summary
 You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
