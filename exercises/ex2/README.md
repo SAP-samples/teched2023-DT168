@@ -26,14 +26,14 @@ In this exercise, we will create a custom application called Online Shop using A
    &emsp;&emsp;**Name:** Z_ONLINESHOP_XXX  
    &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper  
    &emsp;&emsp;Select **Add to favorite package**  
-   &emsp;&emsp;**Super Package**: $ZLOCAL   
+   &emsp;&emsp;**Super Package**: ZLOCAL   
    &emsp;&emsp;**Package Type**: Development
    <br>
    <br>    
    &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/106324991/da9e7a02-769d-4e16-bd5e-6a49fc99af59">
    <br>
 1. Press **Next** and verify the SWC is LOCAL
-2. Press **Next** and **Finish**
+2. Press **Next**, Create TR by providing **Request description** and **Finish**
 
 ## Exercise 2.2 Create database table
 1. From the context menu of the package **Z_ONLINESHOP_XXX**, choose **New** --> **Other Repository Object**, search for 'database table' and enter the following information:  
@@ -182,11 +182,10 @@ In this exercise, we will create a custom application called Online Shop using A
                           %tky          = order-%tky
                           OrderID       = max_order_id + i
                         ) ).
-
      ENDMETHOD.
 
 ## Exercise 2.5 Test the Online Shop application  
-1. Go to the Service binding, select the entity **OnlineShop** and **Preview**  
+1. Go to the Service binding ZUI_V4_ONLINESHOP_XXX, select the entity **OnlineShop** and **Preview**  
 2. Test the application
 ## Summary
 You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
