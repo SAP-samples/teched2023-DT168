@@ -84,18 +84,75 @@ In this exercise, we will create a custom application called Online Shop using A
      iii.**Service Projection**: ZC_ONLINESHOP_XXX  
      iv. **Business Service**:  
      &emsp;&emsp;**Service Definition**: ZUI_ONLINESHOP_XXX  
-     &emsp;&emsp;**Service Binding**: ZUI_V4_ONLINESHOP_XXX
-
-   Press **Next**
-
+     &emsp;&emsp;**Service Binding**: ZUI_V4_ONLINESHOP_XXX  
+   Press **Next**  
 3. Review the names of the repository objects that are going to be generated and Press **Next**
 
    ![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1ecb4da4-57bf-43b9-842e-4a6d66731589)
 
-   Choose the transport request and press **Finish**
+   Choose the transport request and press **Finish**  
+4. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX  
+## Exercise 2.4 Enhance the Behavior Definition to generate Online Shop Order ID  
+1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
+
+   ```
+   managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
+   strict ( 2 );
+   with draft;
    
-## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
-1. Add 
+   define behavior for ZR_ONLINESHOP_XXX alias OnlineShop
+   persistent table zaonlineshop_801
+   draft table zdonlineshop_xxx
+   etag master LocalLastChangedAt
+   lock master total etag LastChangedAt
+   authorization master ( global )
+   
+   {
+     field ( readonly )
+     OrderID,
+     PurchaseRequisition,
+     PurchRqnCreationDate,
+     CreatedBy,
+     CreatedAt,
+     LastChangedBy,
+     LastChangedAt,
+     LocalLastChangedAt;
+   
+     field ( numbering : managed )
+     OrderUUID;
+   
+     create;
+     update;
+     delete;
+   
+     determination CalculateOrderID on save { create; }
+   
+     draft action Edit;
+     draft action Activate;
+     draft action Discard;
+     draft action Resume;
+     draft determine action Prepare;
+   
+     mapping for ZAONLINESHOP_801
+     {
+       OrderUUID = ORDER_UUID;
+       OrderID = ORDER_ID;
+       OrderItemID = ORDER_ITEM_ID;
+       OrderItemPrice = ORDER_ITEM_PRICE;
+       OrderItemQuantity = ORDER_ITEM_QUANTITY;
+       Currency = CURRENCY;
+       OverallStatusIndicator = OVERALL_STATUS_INDICATOR;
+       DeliveryDate = DELIVERY_DATE;
+       Notes = NOTES;
+       PurchaseRequisition = PURCHASE_REQUISITION;
+       PurchRqnCreationDate = PURCH_RQN_CREATION_DATE;
+       CreatedBy = CREATED_BY;
+       CreatedAt = CREATED_AT;
+       LastChangedBy = LAST_CHANGED_BY;
+       LastChangedAt = LAST_CHANGED_AT;
+       LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+     }
+   }
 ## Exercise 2.5 Test the Online Shop application  
 ## Summary
 You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
