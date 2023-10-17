@@ -27,7 +27,9 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   authorization master ( global )
   with unmanaged save  
   ```
-3. Add save_modified method to the behavior implementation through quick assist and add the code as below:
+3. Add validation to check errors in purchase requisition
+
+4. Add save_modified method to the behavior implementation through quick assist and add the code as below:
 
 ```
     DATA lr_descr_struc TYPE REF TO data.
@@ -99,9 +101,6 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 
   ```
 
-
-
-4. Add validation to check errors in purchase requisition
 
 ## Exercise 3.2 Enhance the Metadata extension view
 
