@@ -27,10 +27,8 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   authorization master ( global )
   with unmanaged save  
   ```
-
-
-
 3. Add save_modified method to the behavior implementation through quick assist. 
+
 
 
 4. Add validation to check errors in purchase requisition
