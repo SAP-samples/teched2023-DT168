@@ -16,7 +16,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 
 ## Exercise 3.2 Enhance the Metadata extension view
 
-1. Replace the code from ZC_ONLINESHOP_XXX with the [this](../src/zc_onlineshop_xxx_mde.txt) code.
+1. Replace the code from ZC_ONLINESHOP_XXX with [this](../src/zc_onlineshop_xxx_mde.txt) code.
 
 ## Exercise 3.2 Enhance the Metadata extension view
 
