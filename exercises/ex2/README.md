@@ -184,7 +184,7 @@ In this exercise, we will create a custom application called Online Shop using A
                         ) ).
 
   ENDMETHOD.
-4. 
+
 ## Exercise 2.5 Test the Online Shop application  
 ## Summary
 You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
