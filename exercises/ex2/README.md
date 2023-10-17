@@ -93,6 +93,7 @@ In this exercise, we will create a custom application called Online Shop using A
    Choose the transport request and press **Finish**  
 4. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX  
 ## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
+> Skip to Step 3 if Online Shop is generated for you
 1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
 
    ```
@@ -157,7 +158,7 @@ In this exercise, we will create a custom application called Online Shop using A
 
 &emsp;&emsp;&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
 
-3. Add the below code to calculateOrderID method of class ZBP_R_ONLINESHOP_XXX
+3. Add the below code to calculateOrderID method of class ZBP_R_ONLINESHOP_XXX   
 
    ```
    METHOD CalculateOrderID.
