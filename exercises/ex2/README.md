@@ -183,7 +183,7 @@ In this exercise, we will create a custom application called Online Shop using A
                           OrderID       = max_order_id + i
                         ) ).
 
-  ENDMETHOD.
+     ENDMETHOD.
 
 ## Exercise 2.5 Test the Online Shop application  
 1. Go to the Service binding, select the entity **OnlineShop** and **Preview**  
