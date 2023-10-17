@@ -10,9 +10,26 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 
 1. In the behavior definition, change the strict mode to strict(1). [**TODO** Reasoning]
 
-2. Change the implementation to "Unmanaged Save" and add save_modified method to the behavior implementation through quick assist.
+```
+managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
+strict ( 1 );
+with draft;
 
-3. Add validation to check errors in purchase requisition
+2. Change the implementation to "Unmanaged Save" 
+
+```
+define behavior for ZR_ONLINESHOP_XXX alias OnlineShop
+//persistent table zaonlineshop_801
+draft table zdonlineshop_xxx
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master ( global )
+with unmanaged save
+
+3. Add save_modified method to the behavior implementation through quick assist. 
+
+
+4. Add validation to check errors in purchase requisition
 
 ## Exercise 3.2 Enhance the Metadata extension view
 
