@@ -155,27 +155,27 @@ In this exercise, we will create a custom application called Online Shop using A
    }
 2. Press **Ctrl+1** on the added determination CalculateOrderID to load the quickassist. Select the promt to add corresponding method to the behavior implementation.
 
-&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
+&emsp;&emsp;&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
 
 3. Add the below code to calculateOrderID method of class ZBP_R_ONLINESHOP_XXX
 
    ```
    METHOD CalculateOrderID.
 
-    READ ENTITIES OF zr_onlineshop_801 IN LOCAL MODE
+    READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
       ENTITY OnlineShop
         FIELDS ( OrderID )
         WITH CORRESPONDING #( keys )
       RESULT DATA(OnlineOrders).
 
-    SELECT MAX( order_id ) FROM zaonlineshop_801 INTO @DATA(max_order_id). "active table
-    SELECT SINGLE FROM zdonlineshop_801 FIELDS MAX( orderid ) INTO @DATA(max_orderid_draft). "draft table
+    SELECT MAX( order_id ) FROM zaonlineshop_XX INTO @DATA(max_order_id). "active table
+    SELECT SINGLE FROM zdonlineshop_XXX FIELDS MAX( orderid ) INTO @DATA(max_orderid_draft). "draft table
     IF max_orderid_draft > max_order_id.
       max_order_id = max_orderid_draft.
     ENDIF.
 
     "set initial values of new instances
-    MODIFY ENTITIES OF zr_onlineshop_801 IN LOCAL MODE
+    MODIFY ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
       ENTITY OnlineShop
         UPDATE FIELDS ( OrderID )
         WITH VALUE #( FOR order IN OnlineOrders INDEX INTO i (
@@ -186,6 +186,8 @@ In this exercise, we will create a custom application called Online Shop using A
   ENDMETHOD.
 
 ## Exercise 2.5 Test the Online Shop application  
+1. Go to the Service binding, select the entity **OnlineShop** and **Preview**  
+2. Test the application
 ## Summary
 You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
 Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../ex3/README.md)
