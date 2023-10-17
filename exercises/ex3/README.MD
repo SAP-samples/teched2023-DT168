@@ -199,6 +199,37 @@ CLASS zbp_r_onlineshop_xxx DEFINITION
 ENDCLASS.
 
 ```
+6. Implement Instance features to disable edit once Purchase order is posted for the online shop entry
+i. In the behavior definition ZR_ONLINESHOP_XXX, change as below:
+```
+  create;
+//  update;
+  update (features : instance);
+  delete;
+
+```
+ii. Press **Ctrl+1** on behavior definition ZR_ONLINESHOP_XX to load quick assist proposal to generate get_instance_features method to the implementation. Add the below code.
+
+```
+  METHOD get_instance_features.
+
+    READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
+      ENTITY OnlineShop
+         FIELDS (  OrderUUID OverallStatusIndicator )
+         WITH CORRESPONDING #( keys )
+       RESULT DATA(OnlineShops)
+       FAILED failed.
+
+    result = VALUE #( FOR OnlineShop IN OnlineShops
+                       ( %tky                           = onlineshop-%tky
+                         %features-%update = COND #( WHEN onlineshop-OverallStatusIndicator = zbp_r_onlineshop_xxx=>c_overall_status-submitted
+                                                        THEN if_abap_behv=>fc-o-disabled
+                                                        ELSE if_abap_behv=>fc-o-enabled  )
+                      ) ).
+
+  ENDMETHOD.
+
+```
 
 ## Exercise 3.2 Enhance the Metadata extension view
 
