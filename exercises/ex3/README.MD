@@ -15,7 +15,6 @@ managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
 strict ( 1 );
 with draft;
 
-
 2. Change the implementation to "Unmanaged Save" 
 
 ```
@@ -25,7 +24,8 @@ draft table zdonlineshop_xxx
 etag master LocalLastChangedAt
 lock master total etag LastChangedAt
 authorization master ( global )
-with unmanaged save
+with unmanaged save  
+
 
 3. Add save_modified method to the behavior implementation through quick assist. 
 
