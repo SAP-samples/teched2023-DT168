@@ -8,11 +8,11 @@ In this exercise, we will create a custom application called Online Shop using A
 
 ## [Exercise 2.2 Create database table ZAONLINESHOP_XXX](#exercise-22-create-database-table) 
 
-## [Exercise 2.3 Generate Transactional UI Service](#exercise-23-generate-transactional-ui-service)
+## [Exercise 2.3 Generate Transactional UI Service](#exercise-23-generate-transactional-ui-service)  
 
 ## [Exercise 2.4 Enhance the BO to generate Online Shop Order ID](#exercise-24-enhance-the-bo-to-generate-online-shop-order-id)  
 
-## [Exercise 2.5 Test the Online Shop application](#exercise-25-test-the-online-shop-application)
+## [Exercise 2.5 Test the Online Shop application](#exercise-25-test-the-online-shop-application)  
 
 ## [Summary](#summary)
 
