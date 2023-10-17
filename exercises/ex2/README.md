@@ -84,8 +84,16 @@ In this exercise, we will create a custom application called Online Shop using A
      iii.**Service Projection**: ZC_ONLINESHOP_XXX  
      iv. **Business Service**:  
      &emsp;&emsp;**Service Definition**: ZUI_ONLINESHOP_XXX  
-     &emsp;&emsp;**Service Binding**: ZUI_V4_ONLINESHOP_XXX  
-         
+     &emsp;&emsp;**Service Binding**: ZUI_V4_ONLINESHOP_XXX
+
+   Press **Next**
+
+3. Review the names of the repository objects that are going to be generated and Press **Next**
+
+   ![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1ecb4da4-57bf-43b9-842e-4a6d66731589)
+
+   Choose the transport request and press **Finish**
+   
 ## Exercise 2.4 Enhance the BO to generate Online Shop Order ID  
 1. Add 
 ## Exercise 2.5 Test the Online Shop application  
