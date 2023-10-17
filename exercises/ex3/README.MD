@@ -15,6 +15,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   strict ( 1 );
   with draft;
 
+
 2. Change the implementation to "Unmanaged Save" 
 
   ```
@@ -25,6 +26,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   lock master total etag LastChangedAt
   authorization master ( global )
   with unmanaged save  
+
 
 
 3. Add save_modified method to the behavior implementation through quick assist. 
