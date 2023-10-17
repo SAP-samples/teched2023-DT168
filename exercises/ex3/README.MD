@@ -14,15 +14,11 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
   strict ( 1 );
   with draft;
-
   ```
-
-
 
 2. Change the implementation to "Unmanaged Save" 
 
   ```
-
   define behavior for ZR_ONLINESHOP_XXX alias OnlineShop
   //persistent table zaonlineshop_801
   draft table zdonlineshop_xxx
@@ -30,6 +26,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   lock master total etag LastChangedAt
   authorization master ( global )
   with unmanaged save  
+  ```
 
 
 
