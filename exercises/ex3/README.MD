@@ -4,6 +4,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 ## [Exercise 3.1 Enhance the Behavior definition](#exercise-31-enhance-the-behavior-definition)
 ## [Exercise 3.2 Enhance the Behavior implementation for validation and posting of the Purchase Requisition](exercise-32-enhance-the-behavior-implementation-for-validation-and-posting-of-the-purchase-requisition)
   
+
 ## Exercise 3.1 Enhance the Behavior definition
 
 ## Exercise 3.2 Enhance the Behavior implementation for validation and posting of the Purchase Requisition
