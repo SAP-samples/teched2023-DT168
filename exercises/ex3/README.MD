@@ -29,20 +29,82 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   ```
 3. Add validation to check errors in purchase requisition
 
-i. Add validation to the Behavior definition
+  i. Add validation to the Behavior definition
+  
+  ```
+    create;
+    update;
+    delete;
+  
+    validation checkPurchaseRequisition on save {create;}
+    determination CalculateOrderID on save { create; }
+  ```
+  
+  ```
+    //  draft determine action Prepare;
+    draft determine action Prepare { validation checkPurchaseRequisition; }
+  ```
+  ii. Add the validation method checkPurchaseRequisition through quick assist and add the following code:
 
 ```
-  create;
-  update;
-  delete;
+METHOD checkPurchaseRequisition.
+      
+    READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
+      ENTITY OnlineShop
+        ALL FIELDS WITH
+        CORRESPONDING #( keys )
+      RESULT DATA(OnlineOrders).
 
-  validation checkPurchaseRequisition on save {create;}
-  determination CalculateOrderID on save { create; }
-```
+    LOOP AT OnlineOrders INTO DATA(OnlineOrder) WHERE OverallStatusIndicator = zbp_r_onlineshop_XXX=>c_overall_status-post.
+      DATA(pr_returns) = zcl_bapi_wrap_factory_xx=>create_instance( )->check(
+          EXPORTING
+            pr_header        = VALUE zif_wrap_bapi_pr_create_xx=>pr_header( pr_type = 'NB' )
+            pr_items         = VALUE zif_wrap_bapi_pr_create_xx=>pr_items( (
+              preq_item  = '00010'
+              plant      = '1710'
+              acctasscat = 'U'
+              currency   = OnlineOrder-Currency
+              deliv_date = OnlineOrder-DeliveryDate
+              material   = OnlineOrder-OrderItemID
+              matl_group = 'L001'
+              preq_price = OnlineOrder-OrderItemPrice
+              quantity   = OnlineOrder-OrderItemQuantity
+              unit       = 'EA'
+              pur_group = '001'
+              purch_org = '1010'
+              short_text = OnlineOrder-Notes
+            ) )
 
-```
-  //  draft determine action Prepare;
-  draft determine action Prepare { validation checkPurchaseRequisition; }
+        ).
+
+      LOOP AT pr_returns INTO DATA(pr_return_msg) WHERE type = 'E' OR type = 'W'.
+        APPEND VALUE #(
+          orderuuid = OnlineOrder-OrderUUID
+          %msg = new_message(
+                        id        = pr_return_msg-id
+                        number    = pr_return_msg-number
+                        severity  = COND #( WHEN pr_return_msg-type = 'E' THEN if_abap_behv_message=>severity-error
+                                            WHEN pr_return_msg-type = 'W' THEN if_abap_behv_message=>severity-warning
+                                             )
+                         v1 = pr_return_msg-message_v1
+                         v2 = pr_return_msg-message_v2
+                         v3 = pr_return_msg-message_v3
+                         v4 = pr_return_msg-message_v4  )
+          %element-purchaserequisition = if_abap_behv=>mk-on
+           ) TO reported-onlineshop.
+
+        IF pr_return_msg-type = 'E' OR pr_return_msg-type = 'A'.
+
+          APPEND VALUE #(
+           orderuuid = OnlineOrder-OrderUUID
+           %fail = VALUE #( cause = if_abap_behv=>cause-unspecific )
+          ) TO failed-onlineshop.
+
+        ENDIF.
+      ENDLOOP.
+    ENDLOOP.
+  ENDMETHOD.
+
 ```
 
 4. Add save_modified method to the behavior implementation through quick assist and add the code as below:
@@ -116,7 +178,27 @@ i. Add validation to the Behavior definition
   ENDMETHOD.
 
   ```
+5. Add constants for Online shop status in the global class of ZBP_R_ONLINESHOP_XXX
 
+```
+CLASS zbp_r_onlineshop_xxx DEFINITION
+  PUBLIC
+  ABSTRACT
+  FINAL
+  FOR BEHAVIOR OF zr_onlineshop_xxx .
+
+  PUBLIC SECTION.
+    CONSTANTS:
+      BEGIN OF c_overall_status,
+        inprocess TYPE zos_status VALUE '',
+        post      TYPE zos_status VALUE 'P',
+        submitted TYPE string VALUE 'S',
+      END OF c_overall_status.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+```
 
 ## Exercise 3.2 Enhance the Metadata extension view
 
