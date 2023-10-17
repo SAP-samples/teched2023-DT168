@@ -29,6 +29,22 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   ```
 3. Add validation to check errors in purchase requisition
 
+i. Add validation to the Behavior definition
+
+```
+  create;
+  update;
+  delete;
+
+  validation checkPurchaseRequisition on save {create;}
+  determination CalculateOrderID on save { create; }
+```
+
+```
+  //  draft determine action Prepare;
+  draft determine action Prepare { validation checkPurchaseRequisition; }
+```
+
 4. Add save_modified method to the behavior implementation through quick assist and add the code as below:
 
 ```
