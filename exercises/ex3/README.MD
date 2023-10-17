@@ -35,7 +35,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
     DATA r_online_shop_old TYPE zr_onlineshop_XXX.
     IF create-onlineshop IS NOT INITIAL.
       online_shop = CORRESPONDING #( create-onlineshop MAPPING FROM ENTITY ).
-    ENDIF.
+    ENDIF. 
     IF update-onlineshop IS NOT INITIAL.
       SELECT * FROM zaonlineshop_XXX
              FOR ALL ENTRIES IN @update-onlineshop
