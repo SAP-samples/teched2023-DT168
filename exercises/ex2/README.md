@@ -103,7 +103,7 @@ In this exercise, we will create a custom application called Online Shop using A
    with draft;
    
    define behavior for ZR_ONLINESHOP_XXX alias OnlineShop
-   persistent table zaonlineshop_801
+   persistent table zaonlineshop_xxx
    draft table zdonlineshop_xxx
    etag master LocalLastChangedAt
    lock master total etag LastChangedAt
@@ -135,7 +135,7 @@ In this exercise, we will create a custom application called Online Shop using A
      draft action Resume;
      draft determine action Prepare;
    
-     mapping for ZAONLINESHOP_801
+     mapping for ZAONLINESHOP_xxx
      {
        OrderUUID = ORDER_UUID;
        OrderID = ORDER_ID;
