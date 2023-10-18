@@ -53,8 +53,8 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   ```
   ii. Add the validation method checkPurchaseRequisition through quick assist and add the following code:
 
-```
-METHOD checkPurchaseRequisition.
+  ```
+  METHOD checkPurchaseRequisition.
       
     READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
       ENTITY OnlineShop
@@ -112,11 +112,12 @@ METHOD checkPurchaseRequisition.
     ENDLOOP.
   ENDMETHOD.
 
-```
+  ```
 
 4. Add save_modified method to the behavior implementation through quick assist and add the code as below:
 
-```
+    ```
+    DATA online_shop   TYPE STANDARD TABLE OF zaonlineshop_XXX.
     DATA lr_descr_struc TYPE REF TO data.
     DATA lo_structdescr TYPE REF TO cl_abap_structdescr.
     DATA r_online_shop_old TYPE zr_onlineshop_XXX.
