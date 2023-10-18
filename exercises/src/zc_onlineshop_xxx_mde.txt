@@ -147,18 +147,4 @@ annotate view ZC_ONLINESHOP_XXX with
   } ]
   PurchRqnCreationDate;
 
-  @UI.hidden: true
-  CreatedBy;
-
-  @UI.hidden: true
-  CreatedAt;
-
-  @UI.hidden: true
-  LastChangedBy;
-
-  @UI.hidden: true
-  LastChangedAt;
-
-  @UI.hidden: true
-  LocalLastChangedAt;
 }
