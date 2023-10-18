@@ -117,6 +117,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 4. Add save_modified method to the behavior implementation through quick assist and add the code as below:
 
     ```
+  METHOD save_modified.
     DATA online_shop   TYPE STANDARD TABLE OF zaonlineshop_XXX.
     DATA lr_descr_struc TYPE REF TO data.
     DATA lo_structdescr TYPE REF TO cl_abap_structdescr.
