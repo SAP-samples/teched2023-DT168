@@ -27,7 +27,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 
   ```
   define behavior for ZR_ONLINESHOP_XXX alias OnlineShop
-  //persistent table zaonlineshop_801
+  //persistent table zaonlineshop_xxx
   draft table zdonlineshop_xxx
   etag master LocalLastChangedAt
   lock master total etag LastChangedAt
