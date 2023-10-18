@@ -9,14 +9,20 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 
 ## Exercise 3.1 Enhance the BO for validation and posting of the Purchase Requisition
 
-1. In the behavior definition, change the strict mode to strict(1). [**TODO** Reasoning]
+1. In the behavior definition, change the strict mode to strict(1).[**TODO** Reasoning]
 
   ```
   managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
   strict ( 1 );
   with draft;
   ```
+   Change the strict mode version to strict(1) in projection behavior definition ZC_R_ONLINESHOP_XXX 
 
+  ```
+  projection;
+  strict ( 1 );
+  use draft;
+  ```
 2. Change the implementation to "Unmanaged Save" 
 
   ```
