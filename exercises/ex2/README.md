@@ -53,7 +53,7 @@ In this exercise, we will create a custom application called Online Shop using A
      key order_uuid           : sysuuid_x16 not null;
      order_id                 : abap.char(10);
      order_item_id            : abap.char(40);
-     @Semantics.amount.currencyCode : 'zaonlineshop_801.currency'
+     @Semantics.amount.currencyCode : 'zaonlineshop_xxx.currency'
      order_item_price         : abap.curr(11,2);
      order_item_quantity      : abap.numc(4);
      currency                 : abap.cuky;
