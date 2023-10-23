@@ -63,7 +63,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
    
    <img width="626" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1f1b862e-77a3-4325-9748-38f1c4b94571">
 
-3. Similarly, set Release Contract C1 for the Factory Class zcl_bapi_wrap_factory_xxx
+3. Similarly, set Release Contract C1(for Use in Cloud) for the Factory Class zcl_bapi_wrap_factory_xxx
    
 ## Exercise 1.6 Run ATC and Request Exemptions        
 ## Summary       
