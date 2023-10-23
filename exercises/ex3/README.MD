@@ -51,7 +51,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
     //  draft determine action Prepare;
     draft determine action Prepare { validation checkPurchaseRequisition; }
   ```
-  ii. Add the validation method checkPurchaseRequisition through quick assist and add the following code:
+  ii. Place the cursor on method checkPurchaseRequisition in behavior definition and add the validation method checkPurchaseRequisition through quick assist(press ctrl+1) to the behavior implementation class. Add the following code in the method.
 
   ```
   METHOD checkPurchaseRequisition.
@@ -134,7 +134,7 @@ CLASS zbp_r_onlineshop_xxx DEFINITION
 ENDCLASS.
 
 ```
-5. Add save_modified method to the behavior implementation through quick assist and add the code as below:
+5. Add save_modified method to the behavior implementation through quick assist and add the code as below: [TODO: either add image or explain where quick assist should be used]
 
   ```
   METHOD save_modified.
