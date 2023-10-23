@@ -113,8 +113,28 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   ENDMETHOD.
 
   ```
+4. Add constants for Online shop status in the global class of ZBP_R_ONLINESHOP_XXX
 
-4. Add save_modified method to the behavior implementation through quick assist and add the code as below:
+```
+CLASS zbp_r_onlineshop_xxx DEFINITION
+  PUBLIC
+  ABSTRACT
+  FINAL
+  FOR BEHAVIOR OF zr_onlineshop_xxx .
+
+  PUBLIC SECTION.
+    CONSTANTS:
+      BEGIN OF c_overall_status,
+        inprocess TYPE zos_status VALUE '',
+        post      TYPE zos_status VALUE 'P',
+        submitted TYPE string VALUE 'S',
+      END OF c_overall_status.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+```
+5. Add save_modified method to the behavior implementation through quick assist and add the code as below:
 
   ```
   METHOD save_modified.
@@ -187,27 +207,6 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   ENDMETHOD.
 
   ```
-5. Add constants for Online shop status in the global class of ZBP_R_ONLINESHOP_XXX
-
-```
-CLASS zbp_r_onlineshop_xxx DEFINITION
-  PUBLIC
-  ABSTRACT
-  FINAL
-  FOR BEHAVIOR OF zr_onlineshop_xxx .
-
-  PUBLIC SECTION.
-    CONSTANTS:
-      BEGIN OF c_overall_status,
-        inprocess TYPE zos_status VALUE '',
-        post      TYPE zos_status VALUE 'P',
-        submitted TYPE string VALUE 'S',
-      END OF c_overall_status.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-ENDCLASS.
-
-```
 6. Implement Instance features to disable edit once Purchase order is posted for the online shop entry
 i. In the behavior definition ZR_ONLINESHOP_XXX, change as below:
 ```
