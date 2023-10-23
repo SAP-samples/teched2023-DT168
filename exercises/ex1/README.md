@@ -50,8 +50,8 @@ In this exercise, we will create an interface to implement the wrapper class, th
 ## Exercise 1.4 Create factory Class  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Class**.  
 &emsp;**Give the below information:**  
-&emsp;&emsp;**Name**: ZCL_WRAP_BAPI_PR_CREATE_XXX  
-&emsp;&emsp;**Description**: Wrapper Class for BAPI_PR_CREATE  
+&emsp;&emsp;**Name**: ZCL_BAPI_WRAP_FACTORY_XXX  
+&emsp;&emsp;**Description**: Factory Class for Wrapper 
 <br> 
 <img width="328" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/85100e91-acf4-4026-8a54-0e48221d4487">
 
