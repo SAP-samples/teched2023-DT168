@@ -116,7 +116,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 
 4. Add save_modified method to the behavior implementation through quick assist and add the code as below:
 
-    ```
+  ```
   METHOD save_modified.
     DATA online_shop   TYPE STANDARD TABLE OF zaonlineshop_XXX.
     DATA lr_descr_struc TYPE REF TO data.
@@ -220,7 +220,7 @@ i. In the behavior definition ZR_ONLINESHOP_XXX, change as below:
 ii. Press **Ctrl+1** on behavior definition ZR_ONLINESHOP_XX to load quick assist proposal to generate get_instance_features method to the implementation. Add the below code.
 
 ```
-  METHOD get_instance_features.
+METHOD get_instance_features.
 
     READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
       ENTITY OnlineShop
@@ -236,7 +236,7 @@ ii. Press **Ctrl+1** on behavior definition ZR_ONLINESHOP_XX to load quick assis
                                                         ELSE if_abap_behv=>fc-o-enabled  )
                       ) ).
 
-  ENDMETHOD.
+ENDMETHOD.
 
 ```
 7. Find the final behavior definition code [here](../src/zr_onlineshop_xxx_bd.txt)
