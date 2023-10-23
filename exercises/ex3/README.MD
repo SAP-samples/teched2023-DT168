@@ -9,7 +9,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 
 ## Exercise 3.1 Enhance the BO for validation and posting of the Purchase Requisition
 
-1. In the behavior definition ZBP_R_ONLINESHOP_XXX, change the strict mode to strict(1).[**TODO** Reasoning]
+1. In the behavior definition ZBP_R_ONLINESHOP_XXX, change the strict mode to strict(1).In case of S/4HANA 2022 FPS01, strict(1) mode must be used.
 
     ```
     managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
