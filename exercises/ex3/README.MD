@@ -2,8 +2,8 @@
 When the user sets the status of the Online shop to P(Post), create Purchase Requisition using the wrapper created in Exercise 1
 
 ## [Exercise 3.1 Enhance the BO for validation and posting of the Purchase Requisition](#exercise-31-enhance-the-bo-for-validation-and-posting-of-the-purchase-requisition)  
-## [Exercise 3.2 Enhance the Metadata extension view](#exercise-32-enhance-the-metadata-extension-view)  
-## [Exercise 3.3 Test the Online Shop application](exercise-33-test-the-online-shop-application)  
+ 
+## [Exercise 3.2 Test the Online Shop application](exercise-32-test-the-online-shop-application)  
 ## [Summary](#summary)
   
 
@@ -240,11 +240,6 @@ ENDMETHOD.
 ```
 7. Find the final behavior definition code [here](../src/zr_onlineshop_xxx_bd.txt)
 8. Find the final behavior implementation code [here](../src/zbp_r_onlineshop_xxx.txt)
-## Exercise 3.2 Enhance the Metadata extension view
-
-1. Replace the code from ZC_ONLINESHOP_XXX with [this](../src/zc_onlineshop_xxx_mde.txt) code.
-
-## Exercise 3.2 Enhance the Metadata extension view
 
 ## Exercise 3.3 Test the Online Shop application
 
