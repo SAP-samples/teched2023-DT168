@@ -2,8 +2,8 @@
 When the user sets the status of the Online shop to P(Post), create Purchase Requisition using the wrapper created in Exercise 1
 
 ## [Exercise 3.1 Enhance the BO for validation and posting of the Purchase Requisition](#exercise-31-enhance-the-bo-for-validation-and-posting-of-the-purchase-requisition)  
- 
-## [Exercise 3.2 Test the Online Shop application](exercise-32-test-the-online-shop-application)  
+
+## [Exercise 3.2 Test the Online Shop application](exercises/ex3/exercise-32-test-the-online-shop-application)  
 ## [Summary](#summary)
   
 
