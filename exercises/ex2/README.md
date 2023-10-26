@@ -196,4 +196,4 @@ In this exercise, we will create a custom application called Online Shop using A
 2. Test the application
 ## Summary
 You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
-Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../ex3/README.md)
+Continue to - [Exercise 3 - Post Purchase Requisition using Tier 2 wrapper ](../ex3/README.MD)
