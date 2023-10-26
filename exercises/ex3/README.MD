@@ -242,7 +242,7 @@ ENDMETHOD.
 7. Find the final behavior definition code [here](../src/zr_onlineshop_xxx_bd.txt)
 8. Find the final behavior implementation code [here](../src/zbp_r_onlineshop_xxx.txt)
 
-## Exercise 3.3 Test the Online Shop application
+## Exercise 3.2 Test the Online Shop application
 
 Go to Service binding ZUI_V4_ONLINESHOP_XXX, preview on the entity OnlineShop and test the application.
 
