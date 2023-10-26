@@ -16,7 +16,7 @@ In this exercise, we will create a custom application called Online Shop using A
 
 ## [Exercise 2.6 Test the Online Shop application](#exercise-26-test-the-online-shop-application-1)  
 
-## [Summary](#summary)
+## [Summary](#summary-1)
 
 
 
