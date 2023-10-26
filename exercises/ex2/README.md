@@ -187,10 +187,10 @@ In this exercise, we will create a custom application called Online Shop using A
                           OrderID       = max_order_id + i
                         ) ).
      ENDMETHOD.
+   
 ## Exercise 2.5 Enhance the Metadata extension view
-
 1. Replace the code from ZC_ONLINESHOP_XXX with [this](../src/zc_onlineshop_xxx_mde.txt) code.
-2. 
+   
 ## Exercise 2.6 Test the Online Shop application
 1. Go to the Service binding ZUI_V4_ONLINESHOP_XXX, select the entity **OnlineShop** and **Preview**  
 2. Test the application
