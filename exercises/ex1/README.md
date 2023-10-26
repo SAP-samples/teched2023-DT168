@@ -6,9 +6,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 ## [Exercise 1.3 Create wrapper Class ZCL_WRAP_BAPI_PR_CREATE_XXX](#exercise-13-create-wrapper-class)  
 ## [Exercise 1.4 Create factory Class ZCL_BAPI_WRAP_FACTORY_XXX](#exercise-14-create-factory-class)  
 ## [Exercise 1.5 Release Interface and Factory class](#exercise-15-release-interface-and-factory-class) 
-## [Exercise 1.6 Run ATC and Request Exemptions](#exercise-16-run-atc-and-request-exemptions) 
 ## [Summary](#summary)
-
 
 ## Exercise 1.1 Create Package  
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.  
@@ -64,8 +62,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
    <img width="626" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1f1b862e-77a3-4325-9748-38f1c4b94571">
 
 3. Similarly, set Release Contract C1(for Use in Cloud) for the Factory Class zcl_bapi_wrap_factory_xxx
-   
-## Exercise 1.6 Run ATC and Request Exemptions        
+       
 ## Summary       
 You've now created a Tier 2 wrapper on an unreleased BAPI and released for Use in Cloud.  
 Continue to - [Exercise 2 - Create Online Shop application](../ex2/README.md)  
