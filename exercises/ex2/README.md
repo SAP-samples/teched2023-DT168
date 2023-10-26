@@ -2,7 +2,7 @@
 
 In this exercise, we will create a custom application called Online Shop using ABAP Cloud Development model. The application creates an Online shop entry with the Ordered Item.
 
-> An empty online shop has been created for you already. So, skip to Exercise 2.4
+> An empty online shop has been created for you already. So, skip to Exercise 2.4.
 
 ## [Exercise 2.1 Create Package Z_ONLINE_SHOP_XXX](#exercise-21-create-package) 
 
