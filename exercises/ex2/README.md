@@ -91,6 +91,7 @@ In this exercise, we will create a custom application called Online Shop using A
 
 1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
 
+```
    managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
    strict ( 2 );
    with draft;
@@ -148,7 +149,7 @@ In this exercise, we will create a custom application called Online Shop using A
        LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
      }
    }
-2. Press **Ctrl+1** on the added determination CalculateOrderID to load the quickassist. Select the promt to add corresponding method to the behavior implementation.
+1. Press **Ctrl+1** on the added determination CalculateOrderID to load the quickassist. Select the promt to add corresponding method to the behavior implementation.
 
 &emsp;&emsp;&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
 
