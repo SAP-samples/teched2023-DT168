@@ -85,26 +85,12 @@ In this exercise, we will create a custom application called Online Shop using A
    Choose the transport request HE4K917701 and press **Finish**
 
    
-5. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX    
-</details> 
+5. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX
 
-## [Exercise 2.1 Enhance the BO to generate Online Shop Order ID](#exercise-21-enhance-the-bo-to-generate-online-shop-order-id-1)  
+**Exercise 2.0.4** Enhance the BO to add Purchase Requisition details 
 
-## [Exercise 2.2 Enhance the Metadata extension view](#exercise-21-enhance-the-metadata-extension-view-1)  
-
-## [Exercise 2.3 Test the Online Shop application](#exercise-23-test-the-online-shop-application-1)  
-
-## [Summary](#summary-1)
-
-
-
-
-    
-## Exercise 2.1 Enhance the BO to generate Online Shop Order ID
-> Skip to Step 3 if Online Shop is generated for you
 1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
 
-   ```
    managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
    strict ( 2 );
    with draft;
@@ -165,6 +151,22 @@ In this exercise, we will create a custom application called Online Shop using A
 2. Press **Ctrl+1** on the added determination CalculateOrderID to load the quickassist. Select the promt to add corresponding method to the behavior implementation.
 
 &emsp;&emsp;&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
+
+</details> 
+
+## [Exercise 2.1 Enhance the BO to generate Online Shop Order ID](#exercise-21-enhance-the-bo-to-generate-online-shop-order-id-1)  
+
+## [Exercise 2.2 Enhance the Metadata extension view](#exercise-21-enhance-the-metadata-extension-view-1)  
+
+## [Exercise 2.3 Test the Online Shop application](#exercise-23-test-the-online-shop-application-1)  
+
+## [Summary](#summary-1)
+
+
+    
+## Exercise 2.1 Enhance the BO to generate Online Shop Order ID
+> Skip to Step 3 if Online Shop is generated for you
+
 
 3. Add the below code to calculateOrderID method of class ZBP_R_ONLINESHOP_XXX   
 
