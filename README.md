@@ -23,6 +23,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Implement wrapper for Purchase Requisition BAPI BAPI_PR_CREATE](exercises/ex1/)
+    - [Exercise 1.0 - Add Connection to ADT](exercises/ex1#exercise-10-create-package)
     - [Exercise 1.1 - Create Package Z_PURCHASE_REQ_TIER2_XXX](exercises/ex1#exercise-11-create-package)
     - [Exercise 1.2 - Create wrapper Interface ZIF_BAPI_PR_CREATE_XXX](exercises/ex1#exercise-12-create-interface-zif_bapi_pr_create_xx)
     - [Exercise 1.3 Create wrapper Class ZCL_WRAP_BAPI_PR_CREATE_XXX](exercises/ex1#exercise-12-create-wrapper-class-zcl_bapi_pr_wrapper_xx1)
