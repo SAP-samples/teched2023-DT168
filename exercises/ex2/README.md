@@ -12,20 +12,8 @@ In this exercise, we will create a custom application called Online Shop using A
       ### [Exercise 2.0.2 Create database table ZAONLINESHOP_XXX](#exercise-202-create-database-table) 
 
       ### [Exercise 2.0.3 Generate Transactional UI Service](#exercise-203-generate-transactional-ui-service-1) 
-     
-</details> 
 
-## [Exercise 2.1 Enhance the BO to generate Online Shop Order ID](#exercise-21-enhance-the-bo-to-generate-online-shop-order-id-1)  
-
-## [Exercise 2.2 Enhance the Metadata extension view](#exercise-21-enhance-the-metadata-extension-view-1)  
-
-## [Exercise 2.3 Test the Online Shop application](#exercise-23-test-the-online-shop-application-1)  
-
-## [Summary](#summary-1)
-
-
-
-### Exercise 2.0.1 Create Package
+ ### Exercise 2.0.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
 
    &emsp;**Give the below information:**
@@ -100,7 +88,20 @@ In this exercise, we will create a custom application called Online Shop using A
    Choose the transport request HE4K917701 and press **Finish**
 
    
-5. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX
+5. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX    
+</details> 
+
+## [Exercise 2.1 Enhance the BO to generate Online Shop Order ID](#exercise-21-enhance-the-bo-to-generate-online-shop-order-id-1)  
+
+## [Exercise 2.2 Enhance the Metadata extension view](#exercise-21-enhance-the-metadata-extension-view-1)  
+
+## [Exercise 2.3 Test the Online Shop application](#exercise-23-test-the-online-shop-application-1)  
+
+## [Summary](#summary-1)
+
+
+
+
     
 ## Exercise 2.1 Enhance the BO to generate Online Shop Order ID
 > Skip to Step 3 if Online Shop is generated for you
