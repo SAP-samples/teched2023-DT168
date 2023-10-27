@@ -1,5 +1,3 @@
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-DT168)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-DT168)
-
 # DT168 - Using ABAP Cloud to Build Extensions for SAP S/4HANA Cloud, Private Edition
 
 ## Description
