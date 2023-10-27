@@ -75,7 +75,7 @@ ENDCLASS.
     //  draft determine action Prepare;
     draft determine action Prepare { validation checkPurchaseRequisition; }
   ```
-  ii. Place the cursor on method checkPurchaseRequisition in behavior definition and add the validation method checkPurchaseRequisition through quick assist(press ctrl+1) to the behavior implementation class. Add the following code in the method.
+  ii. Place the cursor on checkPurchaseRequisition in behavior definition and add the validation method checkPurchaseRequisition through quick assist(press ctrl+1) to the behavior implementation class. Add the following code in the method.
 
   ```
   METHOD checkPurchaseRequisition.
@@ -138,7 +138,8 @@ ENDCLASS.
 
   ```
 
-5. Add save_modified method to the behavior implementation through quick assist and add the code as below: [TODO: either add image or explain where quick assist should be used]
+5. Place the cursor on "with unmanaged save" in behavior definition . 
+Add save_modified method to the behavior implementation through quick assist (press ctrl + 1) and add the code as below
 
   ```
   METHOD save_modified.
