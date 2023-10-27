@@ -28,6 +28,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
 
   ```
   define behavior for ZR_ONLINESHOP_XXX alias OnlineShop
+  implementation in class ZBP_R_ONLINESHOP_XXX unique
   //persistent table zaonlineshop_xxx  
   draft table zdonlineshop_xxx
   etag master LocalLastChangedAt
