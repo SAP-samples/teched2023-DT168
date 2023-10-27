@@ -10,7 +10,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 
 ## Exercise 1.0 Add system connection to ADT
   
-1.	Open ABAP Developer Tools
+1.	Open Eclipse
 2.	Add ABAP perspective to the IDE - Click on **Search** icon on the toolbar and type **ABAP** and select the entry **ABAP** under the perspectives
    ![](images/ADT0.png)
 
