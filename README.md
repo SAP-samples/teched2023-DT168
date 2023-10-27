@@ -15,7 +15,13 @@ In this Hands On Workshop, we will earn how to apply Cloud API Enablement Guidel
 
 ## Requirements
 
-[TODO]
+To carry out the exercises of this repository, you need to
+
+Install the ABAP Development Tools (ADT) for ABAP development
+Have a browser ready, preferably Google Chrome, to see Fiori Elements preview
+Users for the development environment will be provided to you by the speakers/hosts during the session.
+
+Go to Getting Started - Preparation to find out the installation details, URLs, then start with the first exercise.
 
 ## Exercises
 
