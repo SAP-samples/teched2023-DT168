@@ -9,11 +9,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 ## [Summary](#summary)
 
 ## Exercise 1.0 Add system connection to ADT
-[^Top of page](#)
-
- <details> 
-  <summary>Click to expand!</summary>
-    
+  
 1.	Open ABAP Developer Tools
 2.	Add ABAP perspective to the IDE - Click on **Search** icon on the toolbar and type **ABAP** and select the entry **ABAP** under the perspectives
    ![](images/ADT0.png)
@@ -25,7 +21,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
    ![](images/ADT1.png)
    
 6.	In the **New ABAP Project** wizard, click on **New system connection** hyperlink
-   ![](images/AD164_E1_0_Step3.png)
+   ![](images/ADT2.png)
    
 7.	Enter the following details in the **New ABAP Project Wizard** and click **Next**
 
@@ -34,21 +30,21 @@ In this exercise, we will create an interface to implement the wrapper class, th
    - **Application Server** : **`s4hana1.tdc.sap.com`**
    - **Instance Number** : **`00`**
    - Uncheck option "Activate Secure Network Communication (SNC) as show in the screenshot below
-   ![](images/AD164_E1_0_Step4.png)
+   ![](images/ADT3.png)
    
 7.	In following step, enter the details given below and click **Next**
    - **Client** : **`400`**
    - Enter the user credentials as supplied by the speaker during the session
-   ![](images/AD164_E1_0_Step5.png)
+   ![](images/ADT4.png)
    
 8.	In following step, enter the details given below and click **Finish**
    - **Project Name** : **`HE4_400_DT168_EN`**
-   ![](images/AD164_E1_0_Step6.png)
+   ![](images/ADT5.png)
 
 9.	A project with the name **HE4_400_DT168_EN** will now be available under the Project Explorer representing an active connection to the backend system
-    ![](images/AD164_E1_0_Step7.png)
+    ![](images/ADT6.png)
    
-</details>   
+  
 
 ## Exercise 1.1 Create Package  
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.  
