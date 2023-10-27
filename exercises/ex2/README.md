@@ -7,7 +7,7 @@ In this exercise, we will create a custom application called Online Shop using A
   An empty online shop has been created for you already. For your reference , follow the below steps.  
  <details> 
   <summary>Click to expand!</summary>
- ## Exercise 2.0.1 Create Package
+Exercise 2.0.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
 
    &emsp;**Give the below information:**
@@ -24,7 +24,7 @@ In this exercise, we will create a custom application called Online Shop using A
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next**, Choose TR HE4K917701 and **Finish**
 ![](images/TR.png)
-## Exercise 2.0.2 Create database table
+Exercise 2.0.2 Create database table
 1. From the context menu of the package **Z_ONLINESHOP_XXX**, choose **New** --> **Other Repository Object**, search for 'database table' and enter the following information:  
 &emsp;&emsp;i. **Name**: zaonlineshop_xxx  
 &emsp;&emsp;ii.**Description**: Online Shop data  
@@ -58,7 +58,7 @@ In this exercise, we will create a custom application called Online Shop using A
      local_last_changed_at    : abp_locinst_lastchange_tstmpl;
    }
 
-## Exercise 2.0.3 Generate Transactional UI Service
+Exercise 2.0.3 Generate Transactional UI Service
 1. Select the table created **zaonlineshop_xxx** and from context menu, choose **Generate ABAP Repository Objects**. Select **ABAP RESTful Application Programming Model: UI Service**
 
    <img width="353" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/cb3b4526-a1eb-4b8f-858d-47c48e28ec69">  
