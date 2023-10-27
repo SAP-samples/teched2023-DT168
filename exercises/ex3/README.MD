@@ -35,7 +35,30 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   authorization master ( global )
   with unmanaged save  
   ```
-3. Add validation to check errors in purchase requisition
+
+3. Add constants for Online shop status in the global class of ZBP_R_ONLINESHOP_XXX
+
+```
+CLASS zbp_r_onlineshop_xxx DEFINITION
+  PUBLIC
+  ABSTRACT
+  FINAL
+  FOR BEHAVIOR OF zr_onlineshop_xxx .
+
+  PUBLIC SECTION.
+    CONSTANTS:
+      BEGIN OF c_overall_status,
+        inprocess TYPE zos_status VALUE '',
+        post      TYPE zos_status VALUE 'P',
+        submitted TYPE string VALUE 'S',
+      END OF c_overall_status.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+```
+
+4. Add validation to check errors in purchase requisition
 
   i. Add validation to the Behavior definition
   
@@ -114,27 +137,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
   ENDMETHOD.
 
   ```
-4. Add constants for Online shop status in the global class of ZBP_R_ONLINESHOP_XXX
 
-```
-CLASS zbp_r_onlineshop_xxx DEFINITION
-  PUBLIC
-  ABSTRACT
-  FINAL
-  FOR BEHAVIOR OF zr_onlineshop_xxx .
-
-  PUBLIC SECTION.
-    CONSTANTS:
-      BEGIN OF c_overall_status,
-        inprocess TYPE zos_status VALUE '',
-        post      TYPE zos_status VALUE 'P',
-        submitted TYPE string VALUE 'S',
-      END OF c_overall_status.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-ENDCLASS.
-
-```
 5. Add save_modified method to the behavior implementation through quick assist and add the code as below: [TODO: either add image or explain where quick assist should be used]
 
   ```
