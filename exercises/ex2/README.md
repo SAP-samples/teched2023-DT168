@@ -7,12 +7,6 @@ In this exercise, we will create a custom application called Online Shop using A
   An empty online shop has been created for you already. For your reference , follow the below steps.  
  <details> 
   <summary>Click to expand!</summary>
-      ## [Exercise 2.0.1 Create Package Z_ONLINE_SHOP_XXX](#exercise-201-create-package) 
-
-      ## [Exercise 2.0.2 Create database table ZAONLINESHOP_XXX](#exercise-202-create-database-table) 
-
-      ## [Exercise 2.0.3 Generate Transactional UI Service](#exercise-203-generate-transactional-ui-service-1) 
-
  ## Exercise 2.0.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
 
