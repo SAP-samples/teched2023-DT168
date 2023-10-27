@@ -50,7 +50,7 @@ CLASS zbp_r_onlineshop_xxx DEFINITION
       BEGIN OF c_overall_status,
         inprocess TYPE zos_status VALUE '',
         post      TYPE zos_status VALUE 'P',
-        submitted TYPE string VALUE 'S',
+        submitted TYPE zos_status VALUE 'S',
       END OF c_overall_status.
   PROTECTED SECTION.
   PRIVATE SECTION.
