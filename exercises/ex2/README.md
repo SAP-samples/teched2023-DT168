@@ -166,11 +166,9 @@ In this exercise, we will create a custom application called Online Shop using A
 
 
     
-## Exercise 2.1 Enhance the BO to generate Online Shop Order ID
-> Skip to Step 3 if Online Shop is generated for you
+## Exercise 2.1 Enhance the Behaviour Implementation to generate Online Shop Order ID
 
-
-3. Add the below code to calculateOrderID method of class ZBP_R_ONLINESHOP_XXX   
+1. Add the below code to calculateOrderID method of class ZBP_R_ONLINESHOP_XXX   
 
    ```
    METHOD CalculateOrderID.
