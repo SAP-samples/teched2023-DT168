@@ -42,10 +42,10 @@ In this exercise, we will create an interface to implement the wrapper class, th
    ![](images/AD164_E1_0_Step5.png)
    
 8.	In following step, enter the details given below and click **Finish**
-   - **Project Name** : **`HE4_400_AD164_EN`**
+   - **Project Name** : **`HE4_400_DT168_EN`**
    ![](images/AD164_E1_0_Step6.png)
 
-9.	A project with the name **HE4_400_AD164_EN** will now be available under the Project Explorer representing an active connection to the backend system
+9.	A project with the name **HE4_400_DT168_EN** will now be available under the Project Explorer representing an active connection to the backend system
     ![](images/AD164_E1_0_Step7.png)
    
 </details>   
