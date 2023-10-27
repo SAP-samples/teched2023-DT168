@@ -2,25 +2,30 @@
 
 In this exercise, we will create a custom application called Online Shop using ABAP Cloud Development model. The application creates an Online shop entry with the Ordered Item.
 
-> An empty online shop has been created for you already. So, skip to Exercise 2.4.
+## Exercise 2.0 Empty online shop -- Don't create again
+[^Top of page](#)
+  An empty online shop has been created for you already. For your reference , follow the below steps.  
+ <details> 
+  <summary>Click to expand!</summary>
+      ### [Exercise 2.0.1 Create Package Z_ONLINE_SHOP_XXX](#exercise-201-create-package) 
 
-## [Exercise 2.1 Create Package Z_ONLINE_SHOP_XXX](#exercise-21-create-package) 
+      ### [Exercise 2.0.2 Create database table ZAONLINESHOP_XXX](#exercise-202-create-database-table) 
 
-## [Exercise 2.2 Create database table ZAONLINESHOP_XXX](#exercise-22-create-database-table) 
+      ### [Exercise 2.0.3 Generate Transactional UI Service](#exercise-203-generate-transactional-ui-service-1) 
+     
+</details> 
 
-## [Exercise 2.3 Generate Transactional UI Service](#exercise-23-generate-transactional-ui-service-1) 
+## [Exercise 2.1 Enhance the BO to generate Online Shop Order ID](#exercise-21-enhance-the-bo-to-generate-online-shop-order-id-1)  
 
-## [Exercise 2.4 Enhance the BO to generate Online Shop Order ID](#exercise-24-enhance-the-bo-to-generate-online-shop-order-id-1)  
+## [Exercise 2.2 Enhance the Metadata extension view](#exercise-21-enhance-the-metadata-extension-view-1)  
 
-## [Exercise 2.5 Enhance the Metadata extension view](#exercise-25-enhance-the-metadata-extension-view-1)  
-
-## [Exercise 2.6 Test the Online Shop application](#exercise-26-test-the-online-shop-application-1)  
+## [Exercise 2.3 Test the Online Shop application](#exercise-23-test-the-online-shop-application-1)  
 
 ## [Summary](#summary-1)
 
 
 
-## Exercise 2.1 Create Package
+### Exercise 2.0.1 Create Package
 1. In ADT, Goto **Project Explorer**. From the context menu of the ABAP Project, select **New -> ABAP Package**.
 
    &emsp;**Give the below information:**
@@ -37,7 +42,7 @@ In this exercise, we will create a custom application called Online Shop using A
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next**, Choose TR HE4K917701 and **Finish**
 ![](images/TR.png)
-## Exercise 2.2 Create database table
+### Exercise 2.0.2 Create database table
 1. From the context menu of the package **Z_ONLINESHOP_XXX**, choose **New** --> **Other Repository Object**, search for 'database table' and enter the following information:  
 &emsp;&emsp;i. **Name**: zaonlineshop_xxx  
 &emsp;&emsp;ii.**Description**: Online Shop data  
@@ -71,7 +76,7 @@ In this exercise, we will create a custom application called Online Shop using A
      local_last_changed_at    : abp_locinst_lastchange_tstmpl;
    }
 
-## Exercise 2.3 Generate Transactional UI Service
+### Exercise 2.0.3 Generate Transactional UI Service
 1. Select the table created **zaonlineshop_xxx** and from context menu, choose **Generate ABAP Repository Objects**. Select **ABAP RESTful Application Programming Model: UI Service**
 
    <img width="353" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/cb3b4526-a1eb-4b8f-858d-47c48e28ec69">  
@@ -97,7 +102,7 @@ In this exercise, we will create a custom application called Online Shop using A
    
 5. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX
     
-## Exercise 2.4 Enhance the BO to generate Online Shop Order ID
+## Exercise 2.1 Enhance the BO to generate Online Shop Order ID
 > Skip to Step 3 if Online Shop is generated for you
 1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
 
@@ -190,10 +195,10 @@ In this exercise, we will create a custom application called Online Shop using A
                         ) ).
      ENDMETHOD.
    
-## Exercise 2.5 Enhance the Metadata extension view
+## Exercise 2.2 Enhance the Metadata extension view
 1. Replace the code from ZC_ONLINESHOP_XXX with [this](../src/zc_onlineshop_xxx_mde.txt) code.
    
-## Exercise 2.6 Test the Online Shop application
+## Exercise 2.3 Test the Online Shop application
 1. Go to the Service binding ZUI_V4_ONLINESHOP_XXX, select the entity **OnlineShop** and **Preview**  
 2. Test the application
 ## Summary
