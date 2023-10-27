@@ -1,6 +1,6 @@
 # Exercise 1 - Implement wrapper for Purchase Requisition BAPI BAPI_PR_CREATE
 In this exercise, we will create an interface to implement the wrapper class, the wrapper class and a factory class to instantiate the wrapper class. We will then release the interface and the factory class for Use in Cloud.
-## [Exercise 1.0 Add system conenction to ADT(#exercise-10-Add-system-connection-to-ADT)   
+## [Exercise 1.0 Add system connection to ADT(#exercise-10-Add-system-connection-to-ADT)   
 ## [Exercise 1.1 Create Package $Z_PURCHASE_REQ_TIER2_XXX](#exercise-11-create-package) 
 ## [Exercise 1.2 Create wrapper Interface ZIF_BAPI_PR_WRAPPER_XXX](#exercise-12-create-wrapper-interface)
 ## [Exercise 1.3 Create wrapper Class ZCL_WRAP_BAPI_PR_CREATE_XXX](#exercise-13-create-wrapper-class)  
@@ -16,13 +16,13 @@ In this exercise, we will create an interface to implement the wrapper class, th
     
 1.	Open ABAP Developer Tools
 2.	Add ABAP perspective to the IDE - Click on **Search** icon on the toolbar and type **ABAP** and select the entry **ABAP** under the perspectives
-   ![](images/AD164_E1_0_Step1.png)
+   ![](images/ADT0.png)
 
 3.	Select the ABAP Perspective to have the set of views related to ABAP development configured in the IDE
 4.	Click on the option **Create an ABAP Project** ( if this is the first system that is being connected in the ADT workspace ).
 
   	If connections to other systems already exist in the project explorer, right-click in the **Project Explorer** view and select option **New** -> **ABAP Project** to get the **New ABAP Project** wizard to add the project ( system ) to the workspace.
-   ![](images/AD164_E1_0_Step2.png)
+   ![](images/ADT1.png)
    
 6.	In the **New ABAP Project** wizard, click on **New system connection** hyperlink
    ![](images/AD164_E1_0_Step3.png)
