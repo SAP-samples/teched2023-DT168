@@ -4,7 +4,8 @@ In this exercise, we will create a custom application called Online Shop using A
 
 ## Exercise 2.0 Empty online shop -- Don't create again
 [^Top of page](#)
-  An empty online shop has been created for you already. For your reference , follow the below steps.  
+  
+  An empty online shop has been created for you already. This is for your reference , please donot do steps `2.0.1-2.0.3` .  
  <details> 
   <summary>Click to expand!</summary>
    
