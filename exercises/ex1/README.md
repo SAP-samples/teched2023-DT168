@@ -34,6 +34,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
    
 7.	In following step, enter the details given below and click **Next**
    - **Client** : **`400`**
+     
    - Enter the user credentials DT168-<GroupId> / Welcome1!
    ![](images/ADT4.png)
    
