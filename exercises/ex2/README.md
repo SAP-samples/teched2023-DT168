@@ -91,7 +91,7 @@ In this exercise, we will create a custom application called Online Shop using A
 
 1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
 
-```
+   ```
    managed implementation in class ZBP_R_ONLINESHOP_XXX unique;
    strict ( 2 );
    with draft;
@@ -154,6 +154,7 @@ In this exercise, we will create a custom application called Online Shop using A
 &emsp;&emsp;&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
 
 </details> 
+
 
 ## [Exercise 2.1 Enhance the BO to generate Online Shop Order ID](#exercise-21-enhance-the-bo-to-generate-online-shop-order-id-1)  
 
