@@ -92,8 +92,10 @@ In this exercise, we will create a custom application called Online Shop using A
 
    &emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1ecb4da4-57bf-43b9-842e-4a6d66731589)
 
-   Choose the transport request and press **Finish**  
-4. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX
+   Choose the transport request HE4K917701 and press **Finish**
+
+   
+5. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX
     
 ## Exercise 2.4 Enhance the BO to generate Online Shop Order ID
 > Skip to Step 3 if Online Shop is generated for you
