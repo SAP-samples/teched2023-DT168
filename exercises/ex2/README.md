@@ -156,9 +156,9 @@ In this exercise, we will create a custom application called Online Shop using A
 </details> 
 
 
-## [Exercise 2.1 Enhance the BO to generate Online Shop Order ID](#exercise-21-enhance-the-behaviour-implementation-to-generate-online-shop-order-id-1)  
+## [Exercise 2.1 Enhance the BO to generate Online Shop Order ID](#exercise-21-enhance-the-behaviour-implementation-to-generate-online-shop-order-id)  
 
-## [Exercise 2.2 Enhance the Metadata extension view](#exercise-21-enhance-the-metadata-extension-view-1)  
+## [Exercise 2.2 Enhance the Metadata extension view](#exercise-22-enhance-the-metadata-extension-view-1)  
 
 ## [Exercise 2.3 Test the Online Shop application](#exercise-23-test-the-online-shop-application-1)  
 
