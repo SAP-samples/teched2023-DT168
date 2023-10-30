@@ -199,7 +199,7 @@ In this exercise, we will create a custom application called Online Shop using A
 1. Replace the code from ZC_ONLINESHOP_XXX with [this](../src/zc_onlineshop_xxx_mde.txt) code.
    
 ## Exercise 2.3 Test the Online Shop application
-1. Go to the Service binding ZUI_V4_ONLINESHOP_XXX, select the entity **OnlineShop** and **Preview**  
+1. Go to the Service binding ZUI_ONLINESHOP_O4_XXX, select the entity **OnlineShop** and **Preview**  
 2. Test the application
 ## Summary
 You've now created an Online Shop application. Now let us integrate this application with Purchase Requisition.
