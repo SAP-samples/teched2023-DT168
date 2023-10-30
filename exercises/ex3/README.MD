@@ -17,7 +17,7 @@ When the user sets the status of the Online shop to P(Post), create Purchase Req
     strict ( 1 );
     with draft;
     ```
-   Change the strict mode version to strict(1) from strict(2) in projection behavior definition ZC_R_ONLINESHOP_XXX 
+   Change the strict mode version to strict(1) from strict(2) in projection behavior definition ZC_ONLINESHOP_XXX 
 
     ```
     projection;
