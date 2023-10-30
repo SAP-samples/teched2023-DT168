@@ -248,7 +248,7 @@ ENDMETHOD.
 
 ## Exercise 3.2 Test the Online Shop application
 
-Go to Service binding ZUI_V4_ONLINESHOP_XXX, preview on the entity OnlineShop and test the application.
+Go to Service binding ZUI_ONLINESHOP_O4_XXX, preview on the entity OnlineShop and test the application.
 
 ## Summary
 We have now used the 3 tier model to mitigate limitation of unreleased BAPIs. 
