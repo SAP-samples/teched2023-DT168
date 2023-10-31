@@ -5,7 +5,6 @@ In this exercise, we will create a custom application called Online Shop using A
 ## [Exercise 2.0 Online shop](#exercise-20-online-shop)
      An empty online shop has been created for you already. This is for your reference , please do not repeat steps 
      `2.0.1-2.0.3` . 
-<details> 
 <summary>Click to expand!</summary>
    
 **Exercise 2.0.1** Create Package
