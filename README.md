@@ -47,9 +47,6 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 3.3 - Create Purchase Requisition on Post](exercises/ex2#exercise-33-create-purchase-requisition-on-post)
     - [Exercise 3.4 - Test Online Shop with Purchase requistion creation](exercises/ex2#exercise-34-test-online-shop-with-purchase-requisition-creation)  
   
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
 
 **IMPORTANT**
 
