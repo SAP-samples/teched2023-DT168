@@ -248,8 +248,6 @@ ENDMETHOD.
 
 ## Exercise 3.2 Test the Online Shop application
 
-Go to Service binding ZUI_ONLINESHOP_O4_XXX, preview on the entity OnlineShop and test the application.
-
 > Now, check the local service endpoint of your service binding **`ZUI_ONLINESHOP_O4_XXX`**, and use the preview to test the _Online Shop_ app by creating a purchase order.
 
  <details>
