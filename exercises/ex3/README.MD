@@ -263,7 +263,7 @@ ENDMETHOD.
 
 2. Create a new order and fill the order details as shown. Use value helps and drop downs wherever available.
 
-      <img src="images/createAction.png" alt="table" width="50%">  
+      <img src="images/create_Action.png" alt="table" width="50%">  
       <img src="images/fillOrderDetails.png" alt="table" width="50%">  
 
 3. Observe the created purchase requisition and auto-updated purchase requisition creation date.
