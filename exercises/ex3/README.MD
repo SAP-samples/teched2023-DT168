@@ -250,5 +250,27 @@ ENDMETHOD.
 
 Go to Service binding ZUI_ONLINESHOP_O4_XXX, preview on the entity OnlineShop and test the application.
 
+> Now, check the local service endpoint of your service binding **`ZUI_ONLINESHOP_O4_XXX`**, and use the preview to test the _Online Shop_ app by creating a purchase order.
+
+ <details>
+  <summary>🔵 Click to expand!</summary>
+
+1. Go to Service binding ZUI_ONLINESHOP_O4_XXX and start the **_Fiori elements App Preview_** for the **`OnlineShop`** entity set.
+ 
+    For that, either select the entity set **`OnlineShop`** in the **Entity Set and Associations** section and press the **Preview** button or simply doubleclicking on it.
+ 
+    The _Online Shop_ app will be started in your browser.
+    
+      <img src="images/serviceBindingPreview.png" alt="table" width="50%">  
+
+2. Create a new order and fill the order details as shown. Use value helps and drop downs wherever available.
+
+      <img src="images/createAction.png" alt="table" width="50%">  
+      <img src="images/fillOrderDetails.png" alt="table" width="50%">  
+
+3. Observe the created purchase requisition and auto-updated purchase requisition creation date.
+      <img src="images/result.png" alt="table" width="50%">  
+
+
 ## Summary
 We have now used the 3 tier model to mitigate limitation of unreleased BAPIs. 
