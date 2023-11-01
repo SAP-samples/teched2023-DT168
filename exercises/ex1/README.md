@@ -90,11 +90,12 @@ In this exercise, we will create an interface to implement the wrapper class, th
 &emsp;**Give the below information:**  
 &emsp;&emsp;**Name**: ZCL_BAPI_WRAP_FACTORY_XXX  
 &emsp;&emsp;**Description**: Factory Class for Wrapper 
-<br> 
+<br>
+
 ![](images/Create_Factory_Class.jpg)
 
-2. Choose **Next** and **Finish**  
-3. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  and activate
+3. Choose **Next** and **Finish**  
+4. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  and activate
    
 ## Exercise 1.5 Release Interface and Factory Class
 1. Goto **Properties** of Interface zif_bapi_pr_wrapper_xxx, select **API State** and add Contract C1
