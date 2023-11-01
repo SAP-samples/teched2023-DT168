@@ -31,7 +31,7 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - [Exercise 1.5 - Release the Interface and Factory class](exercises/ex1#exercise-12-release-the-interface-and-factory-class)
 - [Exercise 2 - Create Online Shop application](exercises/ex2/)
     - [Exercise 2.0 - Create Online Shop](exercises/ex2/README.md#exercise-20-create-online-shop)
-    - [Exercise 2.1 - Enhance the Behaviour Implementation to generate Online Shop Order ID](exercises/ex2#exercise-21-enhance-the-bo-to-generate-online-shop-order-id)
+    - [Exercise 2.1 - Enhance the Behaviour Implementation to generate Online Shop Order ID](ex2#exercise-21-enhance-the-behaviour-implementation-to-generate-online-shop-order-id)
     - [Exercise 2.2 - Enhance the Metadata extension view](exercises/ex2#exercise-22-enhance-the-metadata-extension-view-1)
     - [Exercise 2.3 - Test the Online Shop application](exercises/ex2#exercise-23-test-the-online-shop-application-1)
 - [Exercise 3 - Integrate Wrapper for BAPI_PR_CREATE into Online Shop application](exercises/ex3/)
