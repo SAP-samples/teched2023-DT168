@@ -13,7 +13,7 @@ An empty online shop has been created for you already.This is for your reference
    &emsp;**Give the below information:**
    
    &emsp;&emsp;**Name:** Z_ONLINESHOP_XXX  
-   &emsp;&emsp;**Description**: Tier 2 for Purchase Requisition Wrapper  
+   &emsp;&emsp;**Description**: Online Shop Application  
    &emsp;&emsp;Select **Add to favorite package**  
    &emsp;&emsp;**Super Package**: ZLOCAL   
    &emsp;&emsp;**Package Type**: Development
