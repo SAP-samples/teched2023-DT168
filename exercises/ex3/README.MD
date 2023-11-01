@@ -244,7 +244,8 @@ METHOD get_instance_features.
 ENDMETHOD.
 
 ```
-7. Find the final behavior definition code [here](../src/zr_onlineshop_xxx_bd.txt)
+7. Find the final behavior definition code for ZR_ONLINESHOP_XXX [here](../src/zr_onlineshop_xxx_bd.txt) and 
+   ZC_ONLINESHOP_XXX [here](../src/zc_onlineshop_xxx_bd.txt)
 8. Find the final behavior implementation code [here](../src/zbp_r_onlineshop_xxx.txt)
 
 ## Exercise 3.2 Test the Online Shop application
