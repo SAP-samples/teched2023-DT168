@@ -85,6 +85,9 @@ An empty online shop has been created for you already.This is for your reference
    
 5. **Publish** the Service Binding ZUI_V4_ONLINESHOP_XXX
 
+
+</details> 
+
 **Exercise 2.0.4** Enhance the BO to add Purchase Requisition details 
 
 1. Add fields for Order ID, Purchase Requisition and Purchase Requistion creation date to list of read only fields and add determination to generate the Online Shop Order ID. The modified code should look like below:
@@ -150,9 +153,6 @@ An empty online shop has been created for you already.This is for your reference
 1. Press **Ctrl+1** on the added determination CalculateOrderID to load the quickassist. Select the promt to add corresponding method to the behavior implementation.
 
 &emsp;&emsp;&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
-
-</details> 
-
 
 ## [Exercise 2.1 Enhance the Behaviour Implementation to generate Online Shop Order ID](#exercise-21-enhance-the-behaviour-implementation-to-generate-online-shop-order-id)  
 
