@@ -7,7 +7,6 @@ This repository contains the material for the SAP TechEd 2022 session called DT1
 ## Overview
 In this Hands On Workshop, we will earn how to apply Cloud API Enablement Guidelines for SAP S/4HANA Cloud, private edition to consume an un released SAP API by adapting 3 tier extensibility model.
 
-![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/ed79c8cb-8cc0-486a-bb73-0920be190715)
 ![](images/scenario_overview.png)
 
 
@@ -33,7 +32,6 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 1.3 Create wrapper Class ZCL_WRAP_BAPI_PR_CREATE_XXX](exercises/ex1#exercise-12-create-wrapper-class-zcl_bapi_pr_wrapper_xx1)
     - [Exercise 1.4 - Create factory Class ZCL_BAPI_WRAP_FACTORY_XXX](exercises/ex1#exercise-12-create-factory-class-zcl_bapi_wrap_factory_xx)
     - [Exercise 1.5 - Release the Interface and Factory class](exercises/ex1#exercise-12-release-the-interface-and-factory-class)
-    - [Exercise 1.6 - Run ATC and Request Exemptions](exercises/ex1#exercise-12-run-atc-and-request-exemptions)
 - [Exercise 2 - Create Online Shop application](exercises/ex2/)
     - [Exercise 2.1 - Create Package Z_ONLINE_SHOP_XX](exercises/ex2#exercise-21-create-package-z_online_shop_xx)
     - [Exercise 2.2 - Create database table ZAONLINESHOP_XX](exercises/ex2#exercise-22-create-database-table-zaonlineshop_xx)
