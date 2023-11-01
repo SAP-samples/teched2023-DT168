@@ -57,7 +57,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
    &emsp;&emsp;**Super Package**: $ZAPI_ENABLEMENT   
    &emsp;&emsp;**Package Type**: Development   
    <br>  
-   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
+
     ![](images/Create_Package.jpg)
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next** and **Finish**
@@ -68,8 +68,8 @@ In this exercise, we will create an interface to implement the wrapper class, th
 &emsp;&emsp;**Name**: ZIF_BAPI_PR_WRAPPER_XXX  
 &emsp;&emsp;**Description**: Wrapper Interface for BAPI_PR_CREATE  
 <br>  
-&emsp;&emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/f7d54fd5-cf22-463b-95d7-186b7934c149">
 
+![](images/Create_Interface.jpg)
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) and activate  
    
@@ -79,8 +79,8 @@ In this exercise, we will create an interface to implement the wrapper class, th
 &emsp;&emsp;**Name**: ZCL_WRAP_BAPI_PR_CREATE_XXX  
 &emsp;&emsp;**Description**: Wrapper Class for BAPI_PR_CREATE
 <br> 
-&emsp;&emsp;<img width="335" alt="image" src=https://github.com/SAP-samples/teched2023-DT168/assets/102820487/241e1453-aee9-4608-bcc7-9b31ed6ab4de)>
 
+![](images/Create_class.jpg)
 &emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step  
 3. Choose **Next** and **Finish**  
 4. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)  and activate  
@@ -91,16 +91,15 @@ In this exercise, we will create an interface to implement the wrapper class, th
 &emsp;&emsp;**Name**: ZCL_BAPI_WRAP_FACTORY_XXX  
 &emsp;&emsp;**Description**: Factory Class for Wrapper 
 <br> 
-<img width="328" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/85100e91-acf4-4026-8a54-0e48221d4487">
+![](images/Create_Factory_Class.jpg)
 
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  and activate
    
 ## Exercise 1.5 Release Interface and Factory Class
 1. Goto **Properties** of Interface zif_bapi_pr_wrapper_xxx, select **API State** and add Contract C1
-   
-   <img width="626" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1f1b862e-77a3-4325-9748-38f1c4b94571">
 
+![](images/C1Release.jpg)
 3. Similarly, set Release Contract C1(for Use in Cloud) for the Factory Class zcl_bapi_wrap_factory_xxx
        
 ## Summary       
