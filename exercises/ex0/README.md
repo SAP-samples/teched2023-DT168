@@ -4,7 +4,7 @@ In this exercise,  you will develop a simple custom app (Online Shop) following 
 Assuming there is no released API available for purchase requisition, we will create a wrapper in Tier 2 (API Enablement layer) and release it for consumption in cloud. The online shop shall use the wrapper created in Tier 2 to post the purchase requisition.
 
    ![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/efeda454-8d6c-4f48-ad71-677edda91409)
-
+![](images/scenario_overview.png)
 
 
 ><b>Note</b>:
