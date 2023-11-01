@@ -3,7 +3,6 @@
 In this exercise,  you will develop a simple custom app (Online Shop) following ABAP Cloud development model. When the online shop entry is saved, a purchase requistion is created with the ordered item selected by the user. 
 Assuming there is no released API available for purchase requisition, we will create a wrapper in Tier 2 (API Enablement layer) and release it for consumption in cloud. The online shop shall use the wrapper created in Tier 2 to post the purchase requisition.
 
-   ![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/efeda454-8d6c-4f48-ad71-677edda91409)
 ![](images/scenario_overview.png)
 
 
@@ -14,7 +13,9 @@ The exercise follows the assumption that there is no suitable released API to cr
 
 ## Result
 You will have created an online shop entry which will post a purchase requisition using the wrapper over the not released BAPI (BAPI_PR_CREATE).
+
 <img width="935" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/3b42cc3f-1fd8-41d2-be83-e6682d17c295">
+![](images/Result.jpg)
 
 ### Next Step
 Continue to - [Exercise 1 - Implement wrapper for Purchase Requisition BAPI BAPI_PR_CREATE](../ex1/README.md)
