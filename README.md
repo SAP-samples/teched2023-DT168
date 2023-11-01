@@ -7,7 +7,7 @@ This repository contains the material for the SAP TechEd 2022 session called DT1
 ## Overview
 In this Hands On Workshop, we will earn how to apply Cloud API Enablement Guidelines for SAP S/4HANA Cloud, private edition to consume an un released SAP API by adapting 3 tier extensibility model.
 
-![](images/scenario_overview.png)
+![](images/3-tier-1.png)
 
 
 ## Requirements
