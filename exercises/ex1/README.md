@@ -58,7 +58,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
    &emsp;&emsp;**Package Type**: Development   
    <br>  
    &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/d7b2fee7-6556-4b31-8386-aaa018df1c24">
-   
+    ![](images/Create_Package.jpg)
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next** and **Finish**
 
