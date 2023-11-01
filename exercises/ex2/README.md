@@ -19,7 +19,7 @@ An empty online shop has been created for you already.This is for your reference
    &emsp;&emsp;**Package Type**: Development
    <br>
    <br>    
-   &emsp;<img width="335" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/106324991/da9e7a02-769d-4e16-bd5e-6a49fc99af59">
+   ![](images/Create_Package_Ex2.jpg)
    <br>
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next**, Choose TR HE4K917701 and **Finish**
@@ -62,7 +62,7 @@ An empty online shop has been created for you already.This is for your reference
 **Exercise 2.0.3** Generate Transactional UI Service
 1. Select the table created **zaonlineshop_xxx** and from context menu, choose **Generate ABAP Repository Objects**. Select **ABAP RESTful Application Programming Model: UI Service**
 
-   <img width="353" alt="image" src="https://github.com/SAP-samples/teched2023-DT168/assets/102820487/cb3b4526-a1eb-4b8f-858d-47c48e28ec69">  
+![](images/Gen_Repo1.jpg) 
 
 2. Give the below information in the wizard:
      i. **Data Model**:  
@@ -78,7 +78,7 @@ An empty online shop has been created for you already.This is for your reference
    Press **Next**  
 3. Review the names of the repository objects that are going to be generated and Press **Next**
 
-   &emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/1ecb4da4-57bf-43b9-842e-4a6d66731589)
+![](images/Gen_Repo2.jpg) 
 
    Choose the transport request HE4K917701 and press **Finish**
 
@@ -152,7 +152,7 @@ An empty online shop has been created for you already.This is for your reference
    }
 1. Press **Ctrl+1** on the added determination CalculateOrderID to load the quickassist. Select the promt to add corresponding method to the behavior implementation.
 
-&emsp;&emsp;&emsp;&emsp;![image](https://github.com/SAP-samples/teched2023-DT168/assets/102820487/61fb28be-7749-43f4-ab60-b98da7f80681)  
+![](images/QuickAssit.jpg)  
 
 ## [Exercise 2.1 Enhance the Behaviour Implementation to generate Online Shop Order ID](#exercise-21-enhance-the-behaviour-implementation-to-generate-online-shop-order-id)  
 
