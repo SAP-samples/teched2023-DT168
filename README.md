@@ -21,9 +21,6 @@ Users for the development environment will be provided to you by the speakers/ho
 Go to Getting Started - Preparation to find out the installation details, URLs, then start with the first exercise.
 
 ## Exercises
-
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Implement wrapper for Purchase Requisition BAPI BAPI_PR_CREATE](exercises/ex1/)
     - [Exercise 1.0 - Add Connection to ADT](exercises/ex1#exercise-10-create-package)
