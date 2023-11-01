@@ -23,7 +23,7 @@ An empty online shop has been created for you already.This is for your reference
    <br>
 1. Press **Next** and verify the SWC is LOCAL
 2. Press **Next**, Choose TR HE4K917701 and **Finish**
-![](images/TR.png)
+![](images/TR.jpg)
 
 **Exercise 2.0.2** Create database table
 1. From the context menu of the package **Z_ONLINESHOP_XXX**, choose **New** --> **Other Repository Object**, search for 'database table' and enter the following information:  
