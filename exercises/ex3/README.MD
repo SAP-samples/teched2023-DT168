@@ -55,7 +55,8 @@ CLASS zbp_r_onlineshop_xxx DEFINITION
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
-
+CLASS ZBP_R_ONLINESHOP_XXX IMPLEMENTATION.
+ENDCLASS.
 ```
 
 4. Add validation to check errors in purchase requisition
