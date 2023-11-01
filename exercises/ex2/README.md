@@ -152,7 +152,7 @@ An empty online shop has been created for you already.This is for your reference
    }
 1. Press **Ctrl+1** on the added determination CalculateOrderID to load the quickassist. Select the promt to add corresponding method to the behavior implementation.
 
-![](images/QuickAssit.jpg)  
+![](images/QuickAssist.jpg)  
 
 ## [Exercise 2.1 Enhance the Behaviour Implementation to generate Online Shop Order ID](#exercise-21-enhance-the-behaviour-implementation-to-generate-online-shop-order-id)  
 
