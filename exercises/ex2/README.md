@@ -194,7 +194,7 @@ An empty online shop has been created for you already.This is for your reference
      ENDMETHOD.
    
 ## Exercise 2.2 Enhance the Metadata extension view
-1. Replace the code from ZC_ONLINESHOP_XXX with [this](../src/zc_onlineshop_xxx.txt) code.
+1. Replace the code from Metadata extension ZC_ONLINESHOP_XXX with [this](../src/zc_onlineshop_xxx.txt) code.
    
 ## Exercise 2.3 Test the Online Shop application
 1. Go to the Service binding ZUI_ONLINESHOP_O4_XXX, select the entity **OnlineShop** and **Preview**  
