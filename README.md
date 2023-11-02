@@ -36,9 +36,6 @@ Go to Getting Started - Preparation to find out the installation details, URLs, 
     - [Exercise 2.3 - Test the Online Shop application](exercises/ex2#exercise-23-test-the-online-shop-application-1)
 - [Exercise 3 - Integrate Wrapper for BAPI_PR_CREATE into Online Shop application](exercises/ex3/)
     - [Exercise 3.1 - Enhance the BO for validation and posting of the Purchase Requisition](exercises/ex3#exercise-31-enhance-the-bo-for-validation-and-posting-of-the-purchase-requisition-1)
-        - [1. Implement unmanaged save](exercises/ex3#exercise-31-enhance-the-bo-for-validation-and-posting-of-the-purchase-requisition-1)
-        - [2. Validate Purchase Requisition on Post](exercises/ex3#exercise-31-enhance-the-bo-for-validation-and-posting-of-the-purchase-requisition-1)
-        - [3. Create Purchase Requisition on Post](exercises/ex3#exercise-31-enhance-the-bo-for-validation-and-posting-of-the-purchase-requisition-1)
     - [Exercise 3.2 - Test Online Shop with Purchase requistion creation](exercises/ex3#exercise-32-test-the-online-shop-application-1)  
   
 
