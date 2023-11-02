@@ -5,7 +5,7 @@
 This repository contains the material for the SAP TechEd 2022 session called DT168 - Using ABAP Cloud to Build Extensions for SAP S/4HANA Cloud, Private Edition.  
 
 ## Overview
-In this Hands On Workshop, we will earn how to apply Cloud API Enablement Guidelines for SAP S/4HANA Cloud, private edition to consume an un released SAP API by adapting 3 tier extensibility model.
+In this Hands On Workshop, we will learn how to apply Cloud API Enablement Guidelines for SAP S/4HANA Cloud, private edition to consume an un released SAP API by adapting 3 tier extensibility model.
 
 ![](images/3-tier-1.png)
 
