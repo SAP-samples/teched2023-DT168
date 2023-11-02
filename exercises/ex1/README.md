@@ -70,6 +70,7 @@ In this exercise, we will create an interface to implement the wrapper class, th
 <br>  
 
 ![](images/Create_Interface.jpg)
+
 2. Choose **Next** and **Finish**  
 3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) and activate  
    
@@ -81,7 +82,9 @@ In this exercise, we will create an interface to implement the wrapper class, th
 <br> 
 
 ![](images/Create_class.jpg)
-&emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step  
+&emsp;&emsp;
+
+Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step  
 3. Choose **Next** and **Finish**  
 4. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)  and activate  
     
