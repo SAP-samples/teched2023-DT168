@@ -1,7 +1,7 @@
 <<<<<<< HEAD:exercises/src/zif_wrap_bapi_pr_create_xxx.txt
 "! <h1>BAPI_PR_CREATE wrapper</h1>
 "! <p>This interface offers functionality related to ABAP class wrapper for Purchase Requisition BAPI for BAPI_PR_CREATE function module.</p>
-"! <p>Instances of this interface are created using method {@link zcl_bapi_wrap_factory_xxx.METH:create_instance}
+"! <p>Instances of this interface are created using method {@link zcl_wrap_bapi_factory_xxx.METH:create_instance}
 INTERFACE zif_bapi_pr_wrapper_xxx
   PUBLIC .
   "! Purchase Requisition Number
