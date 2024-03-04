@@ -1,0 +1,66 @@
+"! <h1>BAPI_PR_CREATE wrapper</h1>
+"! <p>This interface offers functionality related to ABAP class wrapper for Purchase Requisition BAPI for BAPI_PR_CREATE function module.</p>
+"! <p>Instances of this interface are created using method {@link zcl_bapi_wrap_factory_xxx.METH:create_instance}
+INTERFACE zif_bapi_pr_wrapper_xxx
+  PUBLIC .
+  "! Purchase Requisition Number
+  TYPES pr_number TYPE banfn.
+
+  TYPES:
+    "! Purchase Req. - Header
+    BEGIN OF pr_header,
+      pr_type TYPE bsart,
+    END OF pr_header,
+
+    "! Purchase Req. - Item
+    BEGIN OF pr_item,
+      preq_item  TYPE bnfpo,
+      plant      TYPE ewerk,
+      acctasscat TYPE knttp,
+      currency   TYPE waers,
+      deliv_date TYPE eindt,
+      material   TYPE matnr18,
+      matl_group TYPE matkl,
+      preq_price TYPE bapicurext,
+      quantity   TYPE bamng,
+      unit       TYPE bamei,
+      pur_group  TYPE ekgrp,
+      purch_org  TYPE ekorg,
+      short_text TYPE txz01,
+    END OF pr_item.
+
+  TYPES:
+    "! Purchase Req. - Item
+    pr_items         TYPE STANDARD TABLE OF pr_item WITH KEY preq_item,
+    "! Table of BAPI return information
+    pr_returns       TYPE bapirettab.
+
+  "! <p>This method checks purchase requsisitions data for validity, using BAPI_PR_CREATE test mode.
+  "! Entries in purchase requisitions that have already been created, will not be checked again.
+  "! BAPI return information will be provided as result in case of successful or faulty purchase requisition validation.</p>
+  "! <strong>Note</strong>: Using this method requires write authorization for authorization objects M_BANF_BSA, M_BANF_EKG, M_BANF_EKO, M_BANF_WRK
+  "! @parameter pr_header | Purchase Req. - Header
+  "! @parameter pr_items | Purchase Req. - Item
+  "! @parameter result | Table of BAPI return information
+  METHODS check
+    IMPORTING pr_header        TYPE pr_header
+              pr_items         TYPE pr_items
+    RETURNING VALUE(result)    TYPE pr_returns.
+  "! <p>This method creates purchase requisitions for all the data that has been added, using BAPI_PR_CREATE.
+  "! Purchase Requisition Number will be returned as result of successful purchase requisition creation.</p>
+  "! <p>Purchase requisitions that have been validated with error return, will not be created.</p>
+  "! <p>Purchase requisitions that have been validated without error return, will be created</p>
+  "! <strong>Note</strong>: Using this method requires write authorization for authorization objects M_BANF_BSA, M_BANF_EKG, M_BANF_EKO, M_BANF_WRK
+  "! @parameter pr_header | Purchase Req. - Header
+  "! @parameter pr_items | Purchase Req. - Item
+  "! @parameter result | Purchase Requisition Number
+  METHODS create
+    IMPORTING pr_header        TYPE pr_header
+              pr_items         TYPE pr_items
+    EXPORTING pr_returns       TYPE pr_returns
+    RETURNING VALUE(result)    TYPE pr_number.
+
+
+
+
+ENDINTERFACE.
