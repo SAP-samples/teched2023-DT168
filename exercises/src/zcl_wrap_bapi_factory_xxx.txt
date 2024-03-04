@@ -1,0 +1,61 @@
+<<<<<<< HEAD:exercises/src/zcl_wrap_bapi_factory_xxx.txt
+"! <h1>BAPI wrapper factory class</h1>
+"! <p>This factory class provides instances of BAPI wrapper classes, e.g. for purchase requisition BAPIs.<br/>
+"! For a description and usage of the available functionality, see the method documentation in wrapper class.</p>
+CLASS zcl_bapi_wrap_factory_xxx DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PRIVATE .
+
+  PUBLIC SECTION.
+
+    "! <p>This method creates an instance of the Purchase Requisition BAPI wrapper implementation.</p>
+    "! @parameter result | Wrapper implementation instance
+    CLASS-METHODS create_instance
+      RETURNING VALUE(result) TYPE REF TO zif_bapi_pr_wrapper_xxx.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+    METHODS constructor.
+ENDCLASS.
+
+CLASS zcl_bapi_wrap_factory_xxx IMPLEMENTATION.
+
+  METHOD create_instance.
+    result = NEW zcl_wrap_bapi_pr_create_xxx(  ).
+  ENDMETHOD.
+
+  METHOD constructor.
+  ENDMETHOD.
+
+ENDCLASS.
+=======
+"! <h1>BAPI wrapper factory class</h1>
+"! <p>This factory class provides instances of BAPI wrapper classes, e.g. for purchase requisition BAPIs.<br/>
+"! For a description and usage of the available functionality, see the method documentation in wrapper class.</p>
+CLASS zcl_wrap_bapi_factory_xxx DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PRIVATE .
+
+  PUBLIC SECTION.
+
+    "! <p>This method creates an instance of the Purchase Requisition BAPI wrapper implementation.</p>
+    "! @parameter result | Wrapper implementation instance
+    CLASS-METHODS create_instance
+      RETURNING VALUE(result) TYPE REF TO zif_wrap_bapi_pr_create_xxx.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+    METHODS constructor.
+ENDCLASS.
+
+CLASS zcl_wrap_bapi_factory_xxx IMPLEMENTATION.
+
+  METHOD create_instance.
+    result = NEW zcl_wrap_bapi_pr_create_xxx(  ).
+  ENDMETHOD.
+
+  METHOD constructor.
+  ENDMETHOD.
+
+ENDCLASS.
+>>>>>>> 23b84a7de16a314edd92def44097dab92e6c5181:exercises/src/zcl_bapi_wrap_factory_xxx.txt
