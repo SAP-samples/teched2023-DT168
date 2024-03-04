@@ -10,7 +10,7 @@ CLASS zcl_wrap_bapi_pr_create_xxx DEFINITION
 
   PUBLIC SECTION.
 
-    INTERFACES zif_bapi_pr_wrapper_xxx.
+    INTERFACES zif_wrap_bapi_pr_create_xxx.
   PROTECTED SECTION.
   PRIVATE SECTION.
 
@@ -18,14 +18,14 @@ CLASS zcl_wrap_bapi_pr_create_xxx DEFINITION
     "!
     "! @parameter pr_header | Purchase Req. - Header
     "! @parameter prheaderx | Purchase Requisition - Header
-    METHODS prepare_headerx IMPORTING pr_header        TYPE zif_wrap_bapi_pr_create_gop=>pr_header
+    METHODS prepare_headerx IMPORTING pr_header        TYPE zif_wrap_bapi_pr_create_xxx=>pr_header
                             RETURNING VALUE(prheaderx) TYPE bapimereqheaderx.
 
     "! <p class="shorttext synchronized" lang="en">This method prepares itemx control structure</p>
     "!
     "! @parameter pr_items | Purchase Req. - Item
     "! @parameter pritemx | Purchase Requisition - Item Data
-    METHODS prepare_itemx IMPORTING pr_items       TYPE zif_wrap_bapi_pr_create_gop=>pr_items
+    METHODS prepare_itemx IMPORTING pr_items       TYPE zif_wrap_bapi_pr_create_xxx=>pr_items
                           RETURNING VALUE(pritemx) TYPE ty_bapimereqitemx.
 
 ENDCLASS.
@@ -48,7 +48,7 @@ CLASS zcl_wrap_bapi_pr_create_xxx IMPLEMENTATION.
 
   METHOD prepare_itemx.
     FIELD-SYMBOLS <fieldx> TYPE any.
-    DATA(pr_item_struct) = CAST cl_abap_structdescr( cl_abap_typedescr=>describe_by_data( VALUE zif_wrap_bapi_pr_create_gop=>pr_item(  ) ) ).
+    DATA(pr_item_struct) = CAST cl_abap_structdescr( cl_abap_typedescr=>describe_by_data( VALUE zif_wrap_bapi_pr_create_xxx=>pr_item(  ) ) ).
 
     LOOP AT pr_items INTO DATA(pr_item).
       DATA(pritemx_line) = VALUE bapimereqitemx( preq_item = pr_item-preq_item ).
@@ -68,7 +68,7 @@ CLASS zcl_wrap_bapi_pr_create_xxx IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD zif_bapi_pr_wrapper_xxx~check.
+  METHOD zif_wrap_bapi_pr_create_xxx~check.
 
     DATA(prheader) = CORRESPONDING bapimereqheader( pr_header ).
     DATA(pritem) = CORRESPONDING ty_bapimereqitemimp( pr_items ).
@@ -88,7 +88,7 @@ CLASS zcl_wrap_bapi_pr_create_xxx IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD zif_bapi_pr_wrapper_xxx~create.
+  METHOD zif_wrap_bapi_pr_create_xxx~create.
 
     DATA(prheader) = CORRESPONDING bapimereqheader( pr_header ).
     DATA(pritem) = CORRESPONDING ty_bapimereqitemimp( pr_items ).

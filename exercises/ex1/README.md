@@ -2,9 +2,9 @@
 In this exercise, we will create an interface to implement the wrapper class, the wrapper class and a factory class to instantiate the wrapper class. We will then release the interface and the factory class for Use in Cloud.
 ## [Exercise 1.0 Add system connection to ADT](#exercise-10-add-system-connection-to-adt-1)  
 ## [Exercise 1.1 Create Package $Z_PURCHASE_REQ_TIER2_XXX](#exercise-11-create-package) 
-## [Exercise 1.2 Create wrapper Interface ZIF_BAPI_PR_WRAPPER_XXX](#exercise-12-create-wrapper-interface)
+## [Exercise 1.2 Create wrapper Interface ZIF_WRAP_BAPI_PR_CREATE_XXX](#exercise-12-create-wrapper-interface)
 ## [Exercise 1.3 Create wrapper Class ZCL_WRAP_BAPI_PR_CREATE_XXX](#exercise-13-create-wrapper-class)  
-## [Exercise 1.4 Create factory Class ZCL_BAPI_WRAP_FACTORY_XXX](#exercise-14-create-factory-class)  
+## [Exercise 1.4 Create factory Class ZCL_WRAP_BAPI_FACTORY_XXX](#exercise-14-create-factory-class)  
 ## [Exercise 1.5 Release Interface and Factory class](#exercise-15-release-interface-and-factory-class-1) 
 ## [Summary](#summary)
 
@@ -65,13 +65,14 @@ In this exercise, we will create an interface to implement the wrapper class, th
 ## Exercise 1.2 Create wrapper Interface  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Interface**.  
 &emsp;**Give the below information:**  
-&emsp;&emsp;**Name**: ZIF_BAPI_PR_WRAPPER_XXX  
+&emsp;&emsp;**Name**: ZIF_WRAP_BAPI_PR_CREATE_XXX  
 &emsp;&emsp;**Description**: Wrapper Interface for BAPI_PR_CREATE  
 <br>  
 
 ![](images/Create_Interface.jpg)
+
 2. Choose **Next** and **Finish**  
-3. Insert the code from [here](../src/zif_bapi_pr_wrapper_xxx.txt) and activate  
+3. Insert the code from [here](../src/zif_wrap_bapi_pr_create_xxx.txt) and activate  
    
 ## Exercise 1.3 Create Wrapper Class   
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Class**.  
@@ -81,21 +82,23 @@ In this exercise, we will create an interface to implement the wrapper class, th
 <br> 
 
 ![](images/Create_class.jpg)
-&emsp;&emsp;Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step  
+&emsp;&emsp;
+
+Click on **Add..** and give the interface ZIF_BAPI_PR_WRAPPER_XXX created in previous step  
 3. Choose **Next** and **Finish**  
 4. Insert the code from [here](../src/zcl_wrap_bapi_pr_create_xxx.txt)  and activate  
     
 ## Exercise 1.4 Create factory Class  
 1. Select the package **$Z_PURCHASE_REQ_TIER2_XXX** and from the context menu, select **New -> ABAP Class**.  
 &emsp;**Give the below information:**  
-&emsp;&emsp;**Name**: ZCL_BAPI_WRAP_FACTORY_XXX  
+&emsp;&emsp;**Name**: ZCL_WRAP_BAPI_FACTORY_XXX  
 &emsp;&emsp;**Description**: Factory Class for Wrapper 
 <br>
 
 ![](images/Create_Factory_Class.jpg)
 
 3. Choose **Next** and **Finish**  
-4. Insert the code from [here](../src/zcl_bapi_wrap_factory_xxx.txt)  and activate
+4. Insert the code from [here](../src/zcl_wrap_bapi_factory_xxx.txt)  and activate
    
 ## Exercise 1.5 Release Interface and Factory Class
 1. Goto **Properties** of Interface zif_bapi_pr_wrapper_xxx, select **API State** and add Contract C1
