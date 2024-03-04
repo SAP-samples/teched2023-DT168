@@ -177,7 +177,7 @@ An empty online shop has been created for you already.This is for your reference
         WITH CORRESPONDING #( keys )
       RESULT DATA(OnlineOrders).
 
-    SELECT MAX( order_id ) FROM zaonlineshop_XX INTO @DATA(max_order_id). "active table
+    SELECT MAX( order_id ) FROM zaonlineshop_XXX INTO @DATA(max_order_id). "active table
     SELECT SINGLE FROM zdonlineshop_XXX FIELDS MAX( orderid ) INTO @DATA(max_orderid_draft). "draft table
     IF max_orderid_draft > max_order_id.
       max_order_id = max_orderid_draft.
