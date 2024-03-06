@@ -79,7 +79,7 @@ ENDCLASS.
   ii. Place the cursor on checkPurchaseRequisition in behavior definition and add the validation method checkPurchaseRequisition through quick assist(press ctrl+1) to the behavior implementation class. Add the following code in the method.
 
   ```
-      METHOD checkPurchaseRequisition.
+METHOD checkPurchaseRequisition.
 
   READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
     ENTITY OnlineShop
@@ -143,74 +143,74 @@ ENDMETHOD.
 Add save_modified method to the behavior implementation through quick assist (press ctrl + 1) and add the code as below
 
   ```
-  METHOD save_modified.
-    DATA online_shop   TYPE STANDARD TABLE OF zaonlineshop_XXX.
-    DATA lr_descr_struc TYPE REF TO data.
-    DATA lo_structdescr TYPE REF TO cl_abap_structdescr.
-    DATA r_online_shop_old TYPE zr_onlineshop_XXX.
-    IF create-onlineshop IS NOT INITIAL.
-      online_shop = CORRESPONDING #( create-onlineshop MAPPING FROM ENTITY ).
-    ENDIF. 
-    IF update-onlineshop IS NOT INITIAL.
-      SELECT * FROM zaonlineshop_XXX
-             FOR ALL ENTRIES IN @update-onlineshop
-             WHERE order_uuid = @update-onlineshop-OrderUUID
-             INTO TABLE @DATA(online_shop_old_t).
+ METHOD save_modified.
+  DATA online_shop   TYPE STANDARD TABLE OF zaonlineshop_XXX.
+  DATA lr_descr_struc TYPE REF TO data.
+  DATA lo_structdescr TYPE REF TO cl_abap_structdescr.
+  DATA r_online_shop_old TYPE zr_onlineshop_XXX.
+  IF create-onlineshop IS NOT INITIAL.
+    online_shop = CORRESPONDING #( create-onlineshop MAPPING FROM ENTITY ).
+  ENDIF.
+  IF update-onlineshop IS NOT INITIAL.
+    SELECT * FROM zaonlineshop_XXX
+           FOR ALL ENTRIES IN @update-onlineshop
+           WHERE order_uuid = @update-onlineshop-OrderUUID
+           INTO TABLE @DATA(online_shop_old_t).
 
-      CREATE DATA lr_descr_struc TYPE zr_onlineshop_XXX. " <- any type
-      lo_structdescr ?= cl_abap_structdescr=>describe_by_data_ref( p_data_ref = lr_descr_struc ).
-      LOOP AT update-onlineshop ASSIGNING FIELD-SYMBOL(<onlineshop_new>).
-        DATA(online_shop_old) = online_shop_old_t[ order_uuid = <onlineshop_new>-OrderUUID ].
-        r_online_shop_old = CORRESPONDING #( online_shop_old MAPPING TO ENTITY ).
-        LOOP AT lo_structdescr->components ASSIGNING FIELD-SYMBOL(<comp>).
-          ASSIGN COMPONENT <comp>-name OF STRUCTURE <onlineshop_new>-%control TO FIELD-SYMBOL(<fld_cntrl>).
-          IF <fld_cntrl> IS ASSIGNED AND <fld_cntrl> = '01'.
-            ASSIGN COMPONENT <comp>-name OF STRUCTURE <onlineshop_new> TO FIELD-SYMBOL(<new_value>).
-            ASSIGN COMPONENT <comp>-name OF STRUCTURE r_online_shop_old TO FIELD-SYMBOL(<old_value>).
-            <old_value> = <new_value>.
-          ENDIF.
-        ENDLOOP.
-        APPEND CORRESPONDING #( r_online_shop_old MAPPING FROM ENTITY ) TO online_shop.
+    CREATE DATA lr_descr_struc TYPE zr_onlineshop_XXX. " <- any type
+    lo_structdescr ?= cl_abap_structdescr=>describe_by_data_ref( p_data_ref = lr_descr_struc ).
+    LOOP AT update-onlineshop ASSIGNING FIELD-SYMBOL(<onlineshop_new>).
+      DATA(online_shop_old) = online_shop_old_t[ order_uuid = <onlineshop_new>-OrderUUID ].
+      r_online_shop_old = CORRESPONDING #( online_shop_old MAPPING TO ENTITY ).
+      LOOP AT lo_structdescr->components ASSIGNING FIELD-SYMBOL(<comp>).
+        ASSIGN COMPONENT <comp>-name OF STRUCTURE <onlineshop_new>-%control TO FIELD-SYMBOL(<fld_cntrl>).
+        IF <fld_cntrl> IS ASSIGNED AND <fld_cntrl> = '01'.
+          ASSIGN COMPONENT <comp>-name OF STRUCTURE <onlineshop_new> TO FIELD-SYMBOL(<new_value>).
+          ASSIGN COMPONENT <comp>-name OF STRUCTURE r_online_shop_old TO FIELD-SYMBOL(<old_value>).
+          <old_value> = <new_value>.
+        ENDIF.
       ENDLOOP.
-    ENDIF.
-
-    LOOP AT online_shop ASSIGNING FIELD-SYMBOL(<online_shop>) WHERE overall_status_indicator = zbp_r_onlineshop_XXX=>c_overall_status-post.
-      DATA pr_returns TYPE zif_wrap_bapi_pr_create_xx=>pr_returns.
-      <online_shop>-purchase_requisition = zcl_bapi_wrap_factory_xx=>create_instance( )->create(
-        EXPORTING
-          pr_header        = VALUE zif_wrap_bapi_pr_create_xx=>pr_header( pr_type = 'NB' )
-          pr_items         = VALUE zif_wrap_bapi_pr_create_xx=>pr_items( (
-            preq_item  = '00010'
-            plant      = '1710'
-            acctasscat = 'U'
-            currency   = <online_shop>-Currency
-            deliv_date = <online_shop>-Delivery_Date
-            material   = <online_shop>-order_item_id
-            matl_group = 'L001'
-            preq_price = <online_shop>-order_item_price
-            quantity   = <online_shop>-order_item_quantity
-            unit       = 'EA'
-            pur_group = '001'
-            purch_org = '1010'
-            short_text = <online_shop>-notes
-          ) )
-        IMPORTING
-          pr_returns    = pr_returns
-      ).
-
-      ASSERT NOT line_exists( pr_returns[ type = 'E' ] ).
-      <online_shop>-purch_rqn_creation_date = cl_abap_context_info=>get_system_date(  ).
-      <online_shop>-overall_status_indicator = zbp_r_onlineshop_XXX=>c_overall_status-submitted.
+      APPEND CORRESPONDING #( r_online_shop_old MAPPING FROM ENTITY ) TO online_shop.
     ENDLOOP.
+  ENDIF.
 
-    MODIFY zaonlineshop_XXX FROM TABLE @online_shop.
+  LOOP AT online_shop ASSIGNING FIELD-SYMBOL(<online_shop>) WHERE overall_status_indicator = zbp_r_onlineshop_XXX=>c_overall_status-post.
+    DATA pr_returns TYPE zif_wrap_bapi_pr_create_xxx=>pr_returns.
+    <online_shop>-purchase_requisition = zcl_wrap_bapi_factory_xxx=>create_instance( )->create(
+      EXPORTING
+        pr_header        = VALUE zif_wrap_bapi_pr_create_xxx=>pr_header( pr_type = 'NB' )
+        pr_items         = VALUE zif_wrap_bapi_pr_create_xxx=>pr_items( (
+          preq_item  = '00010'
+          plant      = '1710'
+          acctasscat = 'U'
+          currency   = <online_shop>-Currency
+          deliv_date = <online_shop>-Delivery_Date
+          material   = <online_shop>-order_item_id
+          matl_group = 'L001'
+          preq_price = <online_shop>-order_item_price
+          quantity   = <online_shop>-order_item_quantity
+          unit       = 'EA'
+          pur_group = '001'
+          purch_org = '1010'
+          short_text = <online_shop>-notes
+        ) )
+      IMPORTING
+        pr_returns    = pr_returns
+    ).
 
-    LOOP AT delete-onlineshop INTO DATA(onlineshop_delete) WHERE OrderUUID IS NOT INITIAL.
-      DELETE FROM zaonlineshop_XXX WHERE order_uuid = @onlineshop_delete-OrderUUID.
-      DELETE FROM zdonlineshop_XXX WHERE orderuuid = @onlineshop_delete-OrderUUID.
-    ENDLOOP.
+    ASSERT NOT line_exists( pr_returns[ type = 'E' ] ).
+    <online_shop>-purch_rqn_creation_date = cl_abap_context_info=>get_system_date(  ).
+    <online_shop>-overall_status_indicator = zbp_r_onlineshop_XXX=>c_overall_status-submitted.
+  ENDLOOP.
 
-  ENDMETHOD.
+  MODIFY zaonlineshop_XXX FROM TABLE @online_shop.
+
+  LOOP AT delete-onlineshop INTO DATA(onlineshop_delete) WHERE OrderUUID IS NOT INITIAL.
+    DELETE FROM zaonlineshop_XXX WHERE order_uuid = @onlineshop_delete-OrderUUID.
+    DELETE FROM zdonlineshop_XXX WHERE orderuuid = @onlineshop_delete-OrderUUID.
+  ENDLOOP.
+
+ENDMETHOD.
 
   ```
 6. Implement Instance features to disable edit once Purchase order is posted for the online shop entry
