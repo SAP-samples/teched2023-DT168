@@ -45,9 +45,9 @@ define table zaonlineshop_xxx {
   order_item_id            : abap.char(40);
   @Semantics.amount.currencyCode : 'zaonlineshop_xxx.currency'
   order_item_price         : abap.curr(11,2);
+  currency                 : abap.cuky;
   @Semantics.quantity.unitOfMeasure : 'zaonlineshop_xxx.uom'
   order_item_quantity      : abap.quan(16,2);
-  currency                 : abap.cuky;
   uom                      : msehi;
   overall_status_indicator : zos_status;
   delivery_date            : abap.dats;
