@@ -58,8 +58,44 @@ ENDCLASS.
 CLASS zbp_r_onlineshop_xxx IMPLEMENTATION.
 ENDCLASS.
 ```
+4. Set default values for purchase requisition during create
+    determination setDefaults on modify { create; }
+    Place the cursor on setDefaults in behavior definition and add the method setDefaults through quick assist(press ctrl+1) to the behavior implementation class. Add the following code in the method.
 
-4. Add validation to check errors in purchase requisition
+METHOD setDefaults.
+    CHECK keys IS NOT INITIAL.
+    READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
+            ENTITY OnlineShop
+            ALL FIELDS WITH CORRESPONDING #( keys )
+            RESULT DATA(read_result)
+            FAILED DATA(read_failed)
+            REPORTED DATA(read_reported).
+
+    MODIFY ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
+            ENTITY OnlineShop
+              UPDATE FIELDS ( Currency Unit )
+              WITH VALUE #( FOR res IN read_result INDEX INTO i (
+                           %is_draft = res-%is_draft
+                           orderuuid      = res-OrderUUID
+                           Currency = 'USD'
+                           Unit  = 'ST'  ) )
+            MAPPED DATA(mapped)
+            FAILED DATA(failed)
+            REPORTED DATA(update_reported).
+
+    reported = CORRESPONDING #( DEEP update_reported ).
+
+    READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
+            ENTITY OnlineShop
+            ALL FIELDS WITH CORRESPONDING #( keys )
+            RESULT read_result
+            FAILED read_failed
+            REPORTED read_reported.
+
+
+
+  ENDMETHOD.
+5. Add validation to check errors in purchase requisition
 
   i. Add validation to the Behavior definition
   
@@ -139,7 +175,7 @@ ENDMETHOD.
 
   ```
 
-5. Place the cursor on `with unmanaged save` in behavior definition . 
+6. Place the cursor on `with unmanaged save` in behavior definition . 
 Add save_modified method to the behavior implementation through quick assist (press ctrl + 1) and add the code as below
 
   ```
@@ -213,7 +249,7 @@ Add save_modified method to the behavior implementation through quick assist (pr
 ENDMETHOD.
 
   ```
-6. Implement Instance features to disable edit once Purchase order is posted for the online shop entry
+7. Implement Instance features to disable edit once Purchase order is posted for the online shop entry
 i. In the behavior definition ZR_ONLINESHOP_XXX, change as below:
 ```
   create;
@@ -244,9 +280,9 @@ METHOD get_instance_features.
 ENDMETHOD.
 
 ```
-7. Find the final behavior definition code for ZR_ONLINESHOP_XXX [here](../src/zr_onlineshop_xxx_bd.txt) and 
+8. Find the final behavior definition code for ZR_ONLINESHOP_XXX [here](../src/zr_onlineshop_xxx_bd.txt) and 
    ZC_ONLINESHOP_XXX [here](../src/zc_onlineshop_xxx_bd.txt)
-8. Find the final behavior implementation code [here](../src/zbp_r_onlineshop_xxx.txt)
+9. Find the final behavior implementation code [here](../src/zbp_r_onlineshop_xxx.txt)
 
 ## Exercise 3.2 Test the Online Shop application
 
