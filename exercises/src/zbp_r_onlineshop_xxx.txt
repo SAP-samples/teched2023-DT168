@@ -54,9 +54,9 @@ METHOD save_modified.
           matl_group = 'L001'
           preq_price = <online_shop>-order_item_price
           quantity   = <online_shop>-order_item_quantity
-          unit       = 'EA'
+          unit       = <online_shop>-uom "'EA'
           pur_group = '001'
-          purch_org = '1010'
+          purch_org = '1710'
           short_text = <online_shop>-notes
         ) )
       IMPORTING
@@ -92,7 +92,9 @@ CLASS lhc_onlineshop DEFINITION INHERITING FROM cl_abap_behavior_handler.
       checkPurchaseRequisition FOR VALIDATE ON SAVE
             IMPORTING keys FOR OnlineShop~checkPurchaseRequisition,
       get_instance_features FOR INSTANCE FEATURES
-            IMPORTING keys REQUEST requested_features FOR OnlineShop RESULT result.
+            IMPORTING keys REQUEST requested_features FOR OnlineShop RESULT result,
+      setDefaults FOR DETERMINE ON MODIFY
+            IMPORTING keys FOR OnlineShop~setDefaults.
 ENDCLASS.
 
 CLASS lhc_onlineshop IMPLEMENTATION.
@@ -136,16 +138,16 @@ CLASS lhc_onlineshop IMPLEMENTATION.
           pr_items         = VALUE zif_wrap_bapi_pr_create_xxx=>pr_items( (
             preq_item  = '00010'
             plant      = '1710'
-            acctasscat = 'U'
+*            acctasscat = 'U'
             currency   = OnlineOrder-Currency
             deliv_date = OnlineOrder-DeliveryDate
             material   = OnlineOrder-OrderItemID
             matl_group = 'L001'
             preq_price = OnlineOrder-OrderItemPrice
             quantity   = OnlineOrder-OrderItemQuantity
-            unit       = 'EA'
-            pur_group = '001'
-            purch_org = '1010'
+*            unit       = 'EA'
+            pur_group = '002'
+            purch_org = '1710'
             short_text = OnlineOrder-Notes
           ) )
 
@@ -197,5 +199,39 @@ ENDMETHOD.
 
 ENDMETHOD.
 
+
+  METHOD setDefaults.
+    CHECK keys IS NOT INITIAL.
+    READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
+            ENTITY OnlineShop
+            ALL FIELDS WITH CORRESPONDING #( keys )
+            RESULT DATA(read_result)
+            FAILED DATA(read_failed)
+            REPORTED DATA(read_reported).
+
+    MODIFY ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
+            ENTITY OnlineShop
+              UPDATE FIELDS ( Currency Unit )
+              WITH VALUE #( FOR res IN read_result INDEX INTO i (
+                           %is_draft = res-%is_draft
+                           orderuuid      = res-OrderUUID
+                           Currency = 'USD'
+                           Unit  = 'ST'  ) )
+            MAPPED DATA(mapped)
+            FAILED DATA(failed)
+            REPORTED DATA(update_reported).
+
+    reported = CORRESPONDING #( DEEP update_reported ).
+
+    READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
+            ENTITY OnlineShop
+            ALL FIELDS WITH CORRESPONDING #( keys )
+            RESULT read_result
+            FAILED read_failed
+            REPORTED read_reported.
+
+
+
+  ENDMETHOD.
 
 ENDCLASS.
