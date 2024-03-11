@@ -72,25 +72,26 @@ annotate view ZC_ONLINESHOP_XXX with
   } ]
   OrderItemPrice;
 
-  @UI.lineItem: [ {
-    position: 50 ,
-    importance: #HIGH,
-    label: 'OrderItemQuantity'
-  } ]
-  @UI.identification: [ {
-    position: 50 ,
-    label: 'OrderItemQuantity'
-  } ]
-  OrderItemQuantity;
-
-  @UI.selectionField: [ {
-    position: 70
+   @UI.selectionField: [ {
+    position: 50
   } ]
   @Consumption.valueHelpDefinition: [{
         entity: { name: 'I_Currency', element: 'Currency' },
        label: 'Currency'
                                     }]
   Currency;
+
+  @UI.lineItem: [ {
+    position: 60 ,
+    importance: #HIGH,
+    label: 'OrderItemQuantity'
+  } ]
+  @UI.identification: [ {
+    position: 60 ,
+    label: 'OrderItemQuantity'
+  } ]
+  OrderItemQuantity;
+ 
   @Consumption.valueHelpDefinition: [{entity: {name: 'I_UnitOfMeasure', element: 'UnitOfMeasure'}}]
   Unit;
 
