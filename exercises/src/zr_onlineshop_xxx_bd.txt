@@ -4,59 +4,60 @@ with draft;
 
 define behavior for ZR_ONLINESHOP_XXX alias OnlineShop
 //persistent table zaonlineshop_xxx
-draft table zdonlineshop_xxx
+draft table ZDONLINESHOP_XXX
 etag master LocalLastChangedAt
 lock master total etag LastChangedAt
-authorization master ( global )
+authorization master( global )
 with unmanaged save
 
 {
   field ( readonly )
-  OrderID,
-  PurchaseRequisition,
-  PurchRqnCreationDate,
-  CreatedBy,
-  CreatedAt,
-  LastChangedBy,
-  LastChangedAt,
-  LocalLastChangedAt;
+   OrderUUID,
+   OrderID,
+   PurchaseRequisition,
+   PurchRqnCreationDate,
+   CreatedAt,
+   CreatedBy,
+   LastChangedAt,
+   LastChangedBy,
+   LocalLastChangedAt;
 
   field ( numbering : managed )
-  OrderUUID;
+   OrderUUID;
 
 
   create;
-//  update;
-  update (features : instance);
+  update(features : instance);
   delete;
 
+  determination setDefaults on modify { create; }
   validation checkPurchaseRequisition on save {create;}
   determination CalculateOrderID on save { create; }
 
   draft action Edit;
-  draft action Activate;
+  draft action Activate optimized;
   draft action Discard;
   draft action Resume;
-  //  draft determine action Prepare;
   draft determine action Prepare { validation checkPurchaseRequisition; }
 
   mapping for ZAONLINESHOP_XXX
   {
-    OrderUUID = ORDER_UUID;
-    OrderID = ORDER_ID;
-    OrderItemID = ORDER_ITEM_ID;
-    OrderItemPrice = ORDER_ITEM_PRICE;
-    OrderItemQuantity = ORDER_ITEM_QUANTITY;
-    Currency = CURRENCY;
-    OverallStatusIndicator = OVERALL_STATUS_INDICATOR;
-    DeliveryDate = DELIVERY_DATE;
-    Notes = NOTES;
-    PurchaseRequisition = PURCHASE_REQUISITION;
-    PurchRqnCreationDate = PURCH_RQN_CREATION_DATE;
-    CreatedBy = CREATED_BY;
-    CreatedAt = CREATED_AT;
-    LastChangedBy = LAST_CHANGED_BY;
-    LastChangedAt = LAST_CHANGED_AT;
-    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    OrderUUID = order_uuid;
+    OrderID = order_id;
+    OrderItemID = order_item_id;
+    OrderItemPrice = order_item_price;
+    OrderItemQuantity = order_item_quantity;
+    Currency = currency;
+    Unit = uom;
+    OverallStatusIndicator = overall_status_indicator;
+    DeliveryDate = delivery_date;
+    Notes = notes;
+    PurchaseRequisition = purchase_requisition;
+    PurchRqnCreationDate = purch_rqn_creation_date;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+    LastChangedBy = last_changed_by;
+    LastChangedAt = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
   }
 }
