@@ -59,9 +59,11 @@ CLASS zbp_r_onlineshop_xxx IMPLEMENTATION.
 ENDCLASS.
 ```
 4. Set default values for purchase requisition during create
+```
     determination setDefaults on modify { create; }
-    Place the cursor on setDefaults in behavior definition and add the method setDefaults through quick assist(press ctrl+1) to the behavior implementation class. Add the following code in the method.
-
+```
+Place the cursor on setDefaults in behavior definition and add the method setDefaults through quick assist(press ctrl+1) to the behavior implementation class. Add the following code in the method.
+```
 METHOD setDefaults.
     CHECK keys IS NOT INITIAL.
     READ ENTITIES OF zr_onlineshop_XXX IN LOCAL MODE
@@ -92,9 +94,8 @@ METHOD setDefaults.
             FAILED read_failed
             REPORTED read_reported.
 
-
-
   ENDMETHOD.
+```
 5. Add validation to check errors in purchase requisition
 
   i. Add validation to the Behavior definition
