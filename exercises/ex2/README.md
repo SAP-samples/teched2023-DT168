@@ -30,8 +30,7 @@ An empty online shop has been created for you already.This is for your reference
 &emsp;&emsp;i. **Name**: zaonlineshop_xxx  
 &emsp;&emsp;ii.**Description**: Online Shop data  
 &emsp;&emsp;iii. Press **Next** and select the transport request and choose **Finish**  
-2. Enter the below code and activate
-   
+2. Enter the below code and activate   
    ```
 @EndUserText.label : 'Online Shop'
 @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
@@ -62,7 +61,7 @@ define table zaonlineshop_xxx {
   local_last_changed_at    : abp_locinst_lastchange_tstmpl;
 
 }
-
+ ```
 **Exercise 2.0.3** Generate Transactional UI Service
 1. Select the table created **zaonlineshop_xxx** and from context menu, choose **Generate ABAP Repository Objects**. Select **ABAP RESTful Application Programming Model: UI Service**
 
