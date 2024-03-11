@@ -33,31 +33,35 @@ An empty online shop has been created for you already.This is for your reference
 2. Enter the below code and activate
    
    ```
-   @EndUserText.label : 'Online Shop'
-   @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
-   @AbapCatalog.tableCategory : #TRANSPARENT
-   @AbapCatalog.deliveryClass : #A
-   @AbapCatalog.dataMaintenance : #NOT_ALLOWED
-   define table zaonlineshop_xxx {
-     key client               : mandt not null;
-     key order_uuid           : sysuuid_x16 not null;
-     order_id                 : abap.char(10);
-     order_item_id            : abap.char(40);
-     @Semantics.amount.currencyCode : 'zaonlineshop_xxx.currency'
-     order_item_price         : abap.curr(11,2);
-     order_item_quantity      : abap.numc(4);
-     currency                 : abap.cuky;
-     overall_status_indicator : zos_status;
-     delivery_date            : abap.dats;
-     notes                    : abap.string(256);
-     purchase_requisition     : abap.char(20);
-     purch_rqn_creation_date  : abap.dats;
-     created_by               : abp_creation_user;
-     created_at               : abp_creation_tstmpl;
-     last_changed_by          : abp_lastchange_user;
-     last_changed_at          : abp_lastchange_tstmpl;
-     local_last_changed_at    : abp_locinst_lastchange_tstmpl;
-   }
+@EndUserText.label : 'Online Shop'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #NOT_ALLOWED
+define table zaonlineshop_xxx {
+
+  key client               : mandt not null;
+  key order_uuid           : sysuuid_x16 not null;
+  order_id                 : abap.char(10);
+  order_item_id            : abap.char(40);
+  @Semantics.amount.currencyCode : 'zaonlineshop_xxx.currency'
+  order_item_price         : abap.curr(11,2);
+  @Semantics.quantity.unitOfMeasure : 'zaonlineshop_xxx.uom'
+  order_item_quantity      : abap.quan(16,2);
+  currency                 : abap.cuky;
+  uom                      : msehi;
+  overall_status_indicator : zos_status;
+  delivery_date            : abap.dats;
+  notes                    : abap.string(256);
+  purchase_requisition     : abap.char(20);
+  purch_rqn_creation_date  : abap.dats;
+  created_by               : abp_creation_user;
+  created_at               : abp_creation_tstmpl;
+  last_changed_by          : abp_lastchange_user;
+  last_changed_at          : abp_lastchange_tstmpl;
+  local_last_changed_at    : abp_locinst_lastchange_tstmpl;
+
+}
 
 **Exercise 2.0.3** Generate Transactional UI Service
 1. Select the table created **zaonlineshop_xxx** and from context menu, choose **Generate ABAP Repository Objects**. Select **ABAP RESTful Application Programming Model: UI Service**
@@ -138,6 +142,7 @@ An empty online shop has been created for you already.This is for your reference
        OrderItemPrice = ORDER_ITEM_PRICE;
        OrderItemQuantity = ORDER_ITEM_QUANTITY;
        Currency = CURRENCY;
+       Unit = UOM;
        OverallStatusIndicator = OVERALL_STATUS_INDICATOR;
        DeliveryDate = DELIVERY_DATE;
        Notes = NOTES;
