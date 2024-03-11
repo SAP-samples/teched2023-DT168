@@ -86,7 +86,13 @@ annotate view ZC_ONLINESHOP_XXX with
   @UI.selectionField: [ {
     position: 70
   } ]
+  @Consumption.valueHelpDefinition: [{
+        entity: { name: 'I_Currency', element: 'Currency' },
+       label: 'Currency'
+                                    }]
   Currency;
+  @Consumption.valueHelpDefinition: [{entity: {name: 'I_UnitOfMeasure', element: 'UnitOfMeasure'}}]
+  Unit;
 
   @UI.lineItem: [ {
     position: 90 ,
