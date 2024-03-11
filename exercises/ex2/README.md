@@ -30,8 +30,8 @@ An empty online shop has been created for you already.This is for your reference
 &emsp;&emsp;i. **Name**: zaonlineshop_xxx  
 &emsp;&emsp;ii.**Description**: Online Shop data  
 &emsp;&emsp;iii. Press **Next** and select the transport request and choose **Finish**  
-2. Enter the below code and activate   
-   ```
+2. Enter the below code and activate
+```
 @EndUserText.label : 'Online Shop'
 @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
 @AbapCatalog.tableCategory : #TRANSPARENT
