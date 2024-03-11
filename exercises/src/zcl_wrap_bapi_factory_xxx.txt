@@ -1,7 +1,7 @@
 "! <h1>BAPI wrapper factory class</h1>
 "! <p>This factory class provides instances of BAPI wrapper classes, e.g. for purchase requisition BAPIs.<br/>
 "! For a description and usage of the available functionality, see the method documentation in wrapper class.</p>
-CLASS zcl_bapi_wrap_factory_xxx DEFINITION
+CLASS zcl_wrap_bapi_factory_xxx DEFINITION
   PUBLIC
   FINAL
   CREATE PRIVATE .
@@ -17,7 +17,7 @@ CLASS zcl_bapi_wrap_factory_xxx DEFINITION
     METHODS constructor.
 ENDCLASS.
 
-CLASS zcl_bapi_wrap_factory_xxx IMPLEMENTATION.
+CLASS zcl_wrap_bapi_factory_xxx IMPLEMENTATION.
 
   METHOD create_instance.
     result = NEW zcl_wrap_bapi_pr_create_xxx(  ).
